@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "title": "HORSE STARS — Collect. Trade. Play.",
+    "description": "Discover HORSE STARS: 102 spectacular horses, extraordinary rarities, and a world of physical trading cards. Your collection starts here."
+  },
+  "nav": {
+    "collection": "The collection",
+    "cards": "Meet the stars",
+    "explore": "Explore the cards",
+    "menu": "Menu",
+    "language": "Choose language",
+    "skip": "Skip to content",
+    "home": "Horse Stars home"
+  },
+  "hero": {
+    "eyebrow": "A world of horses. In your hands.",
+    "collect": "COLLECT.",
+    "trade": "TRADE.",
+    "play": "PLAY.",
+    "count": "HORSES TO COLLECT",
+    "description": "Big personalities. Incredible power. Find your favourites and make every card part of your story.",
+    "primary": "Explore the Horsedex",
+    "secondary": "How to play",
+    "soon": "Coming soon",
+    "image": "Three powerful horses galloping through a mountain stream at sunset",
+    "note": "Real cards. Real connections.",
+    "scroll": "Discover your next favourite"
+  },
+  "collection": {
+    "eyebrow": "Every card has a story",
+    "title": "MEET THE",
+    "titleAccent": "HORSE STARS",
+    "description": "Born to stand out. Made to be collected. Get to know the extraordinary horses waiting in your next pack.",
+    "edition": "The original collection",
+    "preview": "A first look at the collection",
+    "cta": "Explore the HorseDex",
+    "soon": "Six stars to discover. More on the way.",
+    "previous": "Previous cards",
+    "next": "Next cards",
+    "hint": "Swipe to meet the stars",
+    "view": "Take a closer look",
+    "close": "Close card preview",
+    "number": "Collection no.",
+    "total": "Total",
+    "speed": "Speed",
+    "power": "Power",
+    "jump": "Jump",
+    "brains": "Brains"
+  },
+  "rarities": {
+    "elite": "Elite",
+    "epic": "Epic",
+    "legend": "Legend",
+    "standard": "Standard"
+  },
+  "breeds": {
+    "arabian": "Arabian",
+    "mustang": "Mustang",
+    "thoroughbred": "Thoroughbred",
+    "friesian": "Friesian",
+    "americanquarter": "American Quarter",
+    "hanoverian": "Hanoverian",
+    "andalusian": "Andalusian",
+    "appaloosa": "Appaloosa",
+    "czechwarmblood": "Czech Warmblood",
+    "mysterian": "Mysterian"
+  },
+  "play": {
+    "eyebrow": "Good friends. Great battles.",
+    "title": "SMALL CARDS.",
+    "accent": "BIG MATCHES.",
+    "intro": "Five cards each. Five rounds. One winner. Ready?",
+    "steps": [
+      {
+        "title": "Get your five",
+        "text": "Each player starts with 5 cards. Keep them in your hand, ready for battle."
+      },
+      {
+        "title": "Pick. Reveal. Compare.",
+        "text": "Play 5 rounds in this order: Speed, Power, Jump, Brains, then Total. Each round, choose a card and reveal it together."
+      },
+      {
+        "title": "Highest stat takes the cards",
+        "text": "Compare the round’s stat. The highest value wins both cards. A tie? The higher Total wins."
+      },
+      {
+        "title": "Count your stars",
+        "text": "After 5 rounds, count your cards. The player with the most cards wins!"
+      }
+    ],
+    "demo": "Try a stat battle",
+    "demoHint": "Tap a stat. See who takes the cards.",
+    "versus": "VS",
+    "wins": "wins this battle",
+    "tie": "Same stat — higher Total wins",
+    "rules": "How to play",
+    "rulesSummary": "The little details",
+    "rulesText": "Choose your card before seeing your opponent’s. A round winner takes the revealed cards. If both the chosen stat and Total are tied, agree a house rule before you start.",
+    "rounds": "5 rounds · 5 different stats"
+  },
+  "special": {
+    "eyebrow": "Some stars shine differently",
+    "title": "THE EXTRAORDINARY",
+    "accent": "IS OUT THERE.",
+    "intro": "Three special rarities. Unmistakable personalities. Which one will you find?",
+    "original": "Part of the original 102",
+    "swipe": "Explore the rarities",
+    "descriptions": {
+      "elite": "A remarkable horse. An unforgettable find.",
+      "epic": "Exceptional spirit. Made for great battles.",
+      "legend": "The stars of the collection. Truly extraordinary."
+    }
+  },
+  "champion": {
+    "eyebrow": "Coming next · A separate edition",
+    "title": "A NEW CHALLENGE",
+    "accent": "IS COMING.",
+    "count": "Find the 20 champions",
+    "text": "Gold. Silver. Bronze. A new collection of 20 special cards, with enhanced stats on selected horses.",
+    "edition": "Champion Edition",
+    "soon": "Release details coming soon",
+    "alt": "Champion Edition card with a {finish} design",
+    "finishes": {
+      "gold": "gold",
+      "silver": "silver",
+      "bronze": "bronze"
+    }
+  },
+  "book": {
+    "eyebrow": "The Collector’s Book",
+    "title": "COMPLETE YOUR",
+    "accent": "COLLECTION.",
+    "lead": "102 horses. One collection.",
+    "question": "How many have you found?",
+    "text": "Meet the breeds, discover their stories, and keep track of every star. Your collection has a home.",
+    "features": [
+      "See the complete collection",
+      "Discover breeds and horse stories",
+      "Tick off your cards. Spot the ones you’re missing."
+    ],
+    "cta": "Discover the Collector’s Book",
+    "soon": "Product details coming soon",
+    "alt": "The actual Horse Stars Collector’s Book cover, featuring three horses and the collection checklist",
+    "note": "Your collection, one star at a time.",
+    "artwork": "Collector’s Book · Czech cover artwork"
+  },
+  "news": {
+    "eyebrow": "From the world of Horse Stars",
+    "title": "HORSE STARS",
+    "accent": "NEWS.",
+    "text": "Stories, new cards and surprises from the world of Horse Stars.",
+    "tag": "New cards. New stories. Stay curious.",
+    "preview": "A first look",
+    "episode": "Your next adventure starts here",
+    "soon": "First episode coming soon",
+    "play": "Play featured Horse Stars News video",
+    "cta": "Watch on YouTube",
+    "channelSoon": "Channel link coming soon",
+    "privacy": "Video loads only when you press play.",
+    "posterAlt": "Horse Stars News preview — three horses racing into a new adventure",
+    "close": "Close video",
+    "titleVideo": "Horse Stars News — featured video"
+  },
+  "buy": {
+    "eyebrow": "Your next pack is out there",
+    "title": "FIND",
+    "accent": "HORSE STARS.",
+    "text": "Horse Stars is coming to selected riding schools, stores and retailers.",
+    "status": "Getting ready for our first locations",
+    "availability": "Our retailer list is on its way. Check back to find your nearest Horse Stars stockist.",
+    "cta": "Where to buy",
+    "locations": "Retailer updates",
+    "contact": "Ask about availability",
+    "country": "Country",
+    "empty": "Locations will be announced here."
+  },
+  "retail": {
+    "eyebrow": "Let’s build something together",
+    "title": "BRING HORSE STARS",
+    "accent": "TO YOUR STORE.",
+    "text": "Interested in selling Horse Stars? We’d love to hear from retailers, riding schools and distribution partners.",
+    "audience": "Equestrian stores · Riding schools · Toy & hobby stores · Distributors",
+    "cta": "Become a retailer",
+    "subject": "Horse Stars — retailer enquiry"
+  },
+  "closing": {
+    "eyebrow": "A world waiting to be collected",
+    "first": "EVERY CARD IS A STAR.",
+    "second": "EVERY COLLECTION",
+    "third": "IS YOUR STORY.",
+    "back": "Back to the stars",
+    "alt": "Horses running freely through water in a golden mountain landscape"
+  },
+  "footer": {
+    "line": "A little card. A whole world of possibility.",
+    "rights": "HORSE STARS. All rights reserved.",
+    "edition": "Original collection · 102 horses",
+    "explore": "Explore",
+    "connect": "Stay in touch",
+    "contact": "Contact",
+    "horsedex": "HorseDex",
+    "play": "How to Play",
+    "book": "Collector’s Book",
+    "buy": "Where to Buy",
+    "news": "Horse Stars News",
+    "retailers": "Retailers",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "soon": "Coming soon",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "legal": "Legal information",
+    "legalNote": "Legal documents will be published before launch.",
+    "language": "Language"
+  },
+  "dex": {
+    "title": "HORSEDEX",
+    "subtitle": "102 HORSES TO DISCOVER",
+    "eyebrow": "Every star. Every story. One collection.",
+    "description": "Discover the horses, compare their strengths, and find your next favourite.",
+    "sample": "A first look: {count} verified horses. The full 102-horse collection is on its way.",
+    "search": "Search horses",
+    "placeholder": "Find a horse by name…",
+    "breed": "Breed",
+    "rarity": "Rarity",
+    "edition": "Edition",
+    "sort": "Sort by",
+    "allBreeds": "All breeds",
+    "allRarities": "All rarities",
+    "allEditions": "All editions",
+    "number": "Number · ascending",
+    "score": "Highest first",
+    "results": "{count} of {total} horses",
+    "clear": "Clear filters",
+    "emptyTitle": "NO STARS FOUND. YET.",
+    "emptyText": "Try another name or change your filters. Your next favourite could be one search away.",
+    "nojs": "All sample horses are shown. Enable JavaScript to search, filter and sort.",
+    "back": "Back to HorseDex",
+    "previous": "Previous horse",
+    "next": "Next horse",
+    "collectionNumber": "Collection number",
+    "total": "Total score",
+    "stats": "The strengths behind the star",
+    "story": "Every horse has a story",
+    "moreBreed": "MORE {breed} HORSES",
+    "relatedEmpty": "More horses of this breed will appear as the collection grows.",
+    "relatedLabel": "Other horses of the same breed",
+    "browseAll": "Explore the collection",
+    "editionLabel": "Edition",
+    "cardAlt": "{name} — {rarity} Horse Stars trading card",
+    "metaDescription": "Meet {name}, {breed} horse {id}. Discover the {rarity} card, statistics and story in the Horse Stars HorseDex.",
+    "indexMeta": "Explore the Horse Stars HorseDex. Search horses, discover breeds and rarities, and compare Speed, Power, Jump, Brains and Total.",
+    "bonus": "Bonus",
+    "sampleNav": "Browsing the available sample horses",
+    "first": "First available horse",
+    "last": "Last available horse"
+  },
+  "editions": {
+    "base": "Base",
+    "champion": "Champion Edition"
+  }
+}

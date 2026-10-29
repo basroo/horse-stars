@@ -1,0 +1,41 @@
+[
+  {
+    "id": "HS001", "number": 1, "name": "Ezora", "slug": "ezora", "breed": "Arabian",
+    "edition": "base", "rarity": "standard",
+    "stats": { "speed": 56, "power": 67, "jump": 65, "brains": 72 }, "total": 260,
+    "images": { "card": "/images/cards/hs001-ezora.webp" }, "featured": false
+  },
+  {
+    "id": "HS009", "number": 9, "name": "Byzantis", "slug": "byzantis", "breed": "Arabian",
+    "edition": "base", "rarity": "elite",
+    "stats": { "speed": 85, "power": 88, "jump": 92, "brains": 93 }, "total": 358,
+    "title": "The flawless navigator", "tagline": "He navigates by the stars and never gets lost.",
+    "images": { "card": "/images/specials/Elite.png" }, "featured": true, "battleDemo": true
+  },
+  {
+    "id": "HS011", "number": 11, "name": "Flits", "slug": "flits", "breed": "Friesian",
+    "edition": "base", "rarity": "standard",
+    "stats": { "speed": 72, "power": 84, "jump": 80, "brains": 87 }, "total": 323,
+    "images": { "card": "/images/cards/hs011-flits.webp" }, "featured": false
+  },
+  {
+    "id": "HS051", "number": 51, "name": "Exon", "slug": "exon", "breed": "Mustang",
+    "edition": "base", "rarity": "legend",
+    "stats": { "speed": 97, "power": 99, "jump": 98, "brains": 97 }, "total": 391,
+    "title": "Rock Solid", "tagline": "The king of the Rocky Mountains and the strongest horse of all.",
+    "images": { "card": "/images/specials/Legend.png" }, "featured": true
+  },
+  {
+    "id": "HS052", "number": 52, "name": "Ash", "slug": "ash", "breed": "Mustang",
+    "edition": "base", "rarity": "standard",
+    "stats": { "speed": 87, "power": 78, "jump": 80, "brains": 79 }, "total": 324,
+    "images": { "card": "/images/cards/hs052-ash.webp" }, "featured": false
+  },
+  {
+    "id": "HS085", "number": 85, "name": "Queen", "slug": "queen", "breed": "Thoroughbred",
+    "edition": "base", "rarity": "epic",
+    "stats": { "speed": 97, "power": 95, "jump": 94, "brains": 92 }, "total": 378,
+    "title": "The queen of speed", "tagline": "Loves to compete, never lost a race.",
+    "images": { "card": "/images/specials/Epic.png" }, "featured": true, "battleDemo": true
+  }
+]

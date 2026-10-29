@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import { cardImages } from '../../data/assets';
+import type { Horse } from '../../data/horse-types';
+import { breedLabel, type Copy, type Locale } from '../../i18n';
+import { localizedPath } from '../../i18n/paths';
+interface Props { horse: Horse; copy: Copy; locale: Locale }
+const { horse, copy: t, locale } = Astro.props;
+const breed = breedLabel(horse.breed, t);
+const rarity = t.rarities[horse.rarity];
+const image = cardImages[horse.images.card];
+if (!image) throw new Error(`Missing local card image: ${horse.images.card}`);
+---
+<article class={`dex-tile dex-rarity-${horse.rarity}`} data-horse data-name={horse.name} data-breed={horse.breed} data-rarity={horse.rarity} data-edition={horse.edition} data-number={horse.number} data-total={horse.total} data-speed={horse.stats.speed} data-power={horse.stats.power} data-jump={horse.stats.jump} data-brains={horse.stats.brains}>
+  <a href={localizedPath(`/horses/${horse.slug}/`, locale)} class="dex-tile-link" aria-label={`${horse.name} — ${horse.id}, ${breed}, ${rarity}`}>
+    <div class="dex-tile-meta"><span>{horse.id}</span><span class="dex-rarity-label"><i aria-hidden="true"></i>{rarity}</span></div>
+    <div class="dex-tile-art"><Image src={image} alt={t.dex.cardAlt.replace('{name}',horse.name).replace('{rarity}',rarity)} width={320} widths={[160,240,320,480,640]} sizes="(max-width: 359px) 80vw, (max-width: 639px) 40vw, (max-width: 1023px) 27vw, 23vw" loading="lazy" /></div>
+    <div class="dex-tile-caption"><div><h2>{horse.name}</h2><p>{breed}</p></div><div class="dex-tile-total"><strong>{horse.total}</strong><small>{t.collection.total}</small></div></div>
+  </a>
+</article>

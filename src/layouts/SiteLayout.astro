@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+import '../styles/home-sections.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCopy, type Locale } from '../i18n';
+import { alternatePath } from '../i18n/paths';
+interface Props { locale?: Locale; title?: string; description?: string; image?: string; imageAlt?: string }
+const { locale = 'en', title, description, image = '/images/hero/hero-mobile.jpg', imageAlt } = Astro.props;
+const t = getCopy(locale);
+const origin = import.meta.env.PUBLIC_SITE_URL || Astro.site?.href;
+const canonical = origin ? new URL(Astro.url.pathname, origin) : undefined;
+const socialImage = origin ? new URL(image, origin).href : image;
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#201236" />
+    <title>{title ?? t.meta.title}</title><meta name="description" content={description ?? t.meta.description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    {origin && (['en','cs'] as const).map(lang => <link rel="alternate" hreflang={lang} href={new URL(alternatePath(Astro.url.pathname,lang), origin)} />)}
+    <meta property="og:type" content="website" /><meta property="og:site_name" content="HORSE STARS" />
+    <meta property="og:title" content={title ?? t.meta.title} /><meta property="og:description" content={description ?? t.meta.description} />
+    <meta property="og:image" content={socialImage} /><meta property="og:image:alt" content={imageAlt ?? t.hero.image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body><a class="skip-link" href="#main">{t.nav.skip}</a><Header copy={t} locale={locale} /><main id="main"><slot /></main><Footer copy={t} locale={locale} /></body>
+</html>

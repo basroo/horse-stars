@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../../public/images/brand/horse-stars-logo.png';
+import Icon from './Icon.astro';
+import type { Copy, Locale } from '../i18n';
+import { localizedPath, alternatePath } from '../i18n/paths';
+interface Props { copy: Copy; locale: Locale }
+const { copy: t, locale } = Astro.props;
+const home = localizedPath('/', locale);
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a href={locale === 'en' ? '/' : '/cs/'} class="brand" aria-label={t.nav.home}>
+      <Image src={logo} alt="HORSE STARS" width={132} widths={[132,264]} sizes="132px" loading="eager" />
+    </a>
+    <nav class="desktop-nav" aria-label={t.nav.menu}>
+      <a href={`${home}#collection`}>{t.nav.collection}</a>
+      <a href={`${home}#how-to-play`}>{t.hero.secondary}</a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switch" aria-label={t.nav.language}>
+        <a href={alternatePath(Astro.url.pathname,'en')} lang="en" aria-current={locale === 'en' ? 'page' : undefined}>EN</a>
+        <span aria-hidden="true">/</span>
+        <a href={alternatePath(Astro.url.pathname,'cs')} lang="cs" aria-current={locale === 'cs' ? 'page' : undefined}>CS</a>
+      </div>
+      <a href={localizedPath('/horses/',locale)} class="header-cta">{t.footer.horsedex}<Icon /></a>
+    </div>
+  </div>
+</header>

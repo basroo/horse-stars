@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "title": "HORSE STARS — Sbírej. Vyměňuj. Hraj.",
+    "description": "Objev HORSE STARS: 102 úžasných koní, výjimečné rarity a svět sběratelských karet. Tvoje sbírka začíná tady."
+  },
+  "nav": {
+    "collection": "Kolekce",
+    "cards": "Poznej hvězdy",
+    "explore": "Prohlédnout karty",
+    "menu": "Menu",
+    "language": "Vybrat jazyk",
+    "skip": "Přejít na obsah",
+    "home": "Horse Stars – úvod"
+  },
+  "hero": {
+    "eyebrow": "Svět koní. Ve tvých rukou.",
+    "collect": "SBÍREJ.",
+    "trade": "VYMĚŇUJ.",
+    "play": "HRAJ.",
+    "count": "KONÍ DO TVÉ SBÍRKY",
+    "description": "Velké osobnosti. Neuvěřitelná síla. Najdi své oblíbence a přidej každou kartu do svého příběhu.",
+    "primary": "Prozkoumat Horsedex",
+    "secondary": "Jak hrát",
+    "soon": "Již brzy",
+    "image": "Tři silní koně cválající horským potokem při západu slunce",
+    "note": "Skutečné karty. Skutečná přátelství.",
+    "scroll": "Objev svého dalšího oblíbence"
+  },
+  "collection": {
+    "eyebrow": "Každá karta má svůj příběh",
+    "title": "POZNEJ",
+    "titleAccent": "HORSE STARS",
+    "description": "Zrozeni zazářit. Stvořeni pro tvou sbírku. Poznej výjimečné koně, kteří čekají v tvém dalším balíčku.",
+    "edition": "Původní kolekce",
+    "preview": "První pohled na kolekci",
+    "cta": "Prozkoumat HorseDex",
+    "soon": "Šest hvězd k objevení. Další již brzy.",
+    "previous": "Předchozí karty",
+    "next": "Další karty",
+    "hint": "Posuň a poznej hvězdy",
+    "view": "Prohlédnout zblízka",
+    "close": "Zavřít náhled karty",
+    "number": "Číslo v kolekci",
+    "total": "Celkem",
+    "speed": "Rychlost",
+    "power": "Síla",
+    "jump": "Skok",
+    "brains": "Chytrost"
+  },
+  "rarities": {
+    "elite": "Elite",
+    "epic": "Epic",
+    "legend": "Legend",
+    "standard": "Standard"
+  },
+  "breeds": {
+    "arabian": "Arabský kůň",
+    "mustang": "Mustang",
+    "thoroughbred": "Anglický plnokrevník",
+    "friesian": "Fríský kůň",
+    "americanquarter": "Americký quarter",
+    "hanoverian": "Hannoverský kůň",
+    "andalusian": "Andaluský kůň",
+    "appaloosa": "Appaloosa",
+    "czechwarmblood": "Český teplokrevník",
+    "mysterian": "Mysterian"
+  },
+  "play": {
+    "eyebrow": "Dobří kamarádi. Velké souboje.",
+    "title": "MALÉ KARTY.",
+    "accent": "VELKÉ SOUBOJE.",
+    "intro": "Pět karet pro každého. Pět kol. Jeden vítěz. Jdeme na to?",
+    "steps": [
+      {
+        "title": "Vezmi si pět karet",
+        "text": "Každý hráč začíná s 5 kartami. Drž je v ruce, připravené na souboj."
+      },
+      {
+        "title": "Vyber. Otoč. Porovnej.",
+        "text": "Hrajte 5 kol v tomto pořadí: Rychlost, Síla, Skok, Chytrost a Celkem. V každém kole vyber kartu a odhalte je současně."
+      },
+      {
+        "title": "Vyšší hodnota bere karty",
+        "text": "Porovnejte vlastnost daného kola. Vyšší hodnota vyhrává obě karty. Remíza? Rozhoduje vyšší Celkem."
+      },
+      {
+        "title": "Spočítej své hvězdy",
+        "text": "Po 5 kolech spočítejte karty. Hráč s nejvíce kartami vyhrává!"
+      }
+    ],
+    "demo": "Vyzkoušej souboj",
+    "demoHint": "Klepni na vlastnost. Kdo získá karty?",
+    "versus": "VS",
+    "wins": "vyhrává tento souboj",
+    "tie": "Stejná hodnota — rozhoduje vyšší Celkem",
+    "rules": "Jak hrát",
+    "rulesSummary": "Malé detaily",
+    "rulesText": "Vyber kartu dřív, než uvidíš kartu soupeře. Vítěz kola získá odhalené karty. Pokud se shoduje vlastnost i Celkem, domluvte si před hrou vlastní pravidlo.",
+    "rounds": "5 kol · 5 různých vlastností"
+  },
+  "special": {
+    "eyebrow": "Některé hvězdy září jinak",
+    "title": "VÝJIMEČNÍ KONĚ",
+    "accent": "ČEKAJÍ NA TEBE.",
+    "intro": "Tři speciální rarity. Nezaměnitelné osobnosti. Kterého najdeš ty?",
+    "original": "Součást původních 102 karet",
+    "swipe": "Prozkoumej rarity",
+    "descriptions": {
+      "elite": "Pozoruhodný kůň. Nezapomenutelný objev.",
+      "epic": "Výjimečný duch. Stvořený pro velké souboje.",
+      "legend": "Hvězdy kolekce. Opravdu výjimečné."
+    }
+  },
+  "champion": {
+    "eyebrow": "Již brzy · Samostatná edice",
+    "title": "NOVÁ VÝZVA",
+    "accent": "PŘICHÁZÍ.",
+    "count": "Najdi 20 šampionů",
+    "text": "Zlato. Stříbro. Bronz. Nová kolekce 20 speciálních karet s vylepšenými vlastnostmi vybraných koní.",
+    "edition": "Champion Edition",
+    "soon": "Podrobnosti o vydání již brzy",
+    "alt": "Karta Champion Edition s {finish} designem",
+    "finishes": {
+      "gold": "zlatým",
+      "silver": "stříbrným",
+      "bronze": "bronzovým"
+    }
+  },
+  "book": {
+    "eyebrow": "Sběratelská kniha",
+    "title": "DOPLŇ SVOU",
+    "accent": "SBÍRKU.",
+    "lead": "102 koní. Jedna kolekce.",
+    "question": "Kolik už jsi jich našel?",
+    "text": "Poznej plemena, objev jejich příběhy a sleduj každou hvězdu. Tvoje sbírka má svůj domov.",
+    "features": [
+      "Prohlédni si kompletní kolekci",
+      "Objev plemena a příběhy koní",
+      "Odškrtni své karty. Najdi ty, které ti ještě chybí."
+    ],
+    "cta": "Objev sběratelskou knihu",
+    "soon": "Podrobnosti o produktu již brzy",
+    "alt": "Skutečná obálka sběratelské knihy Horse Stars se třemi koňmi a přehledem kolekce",
+    "note": "Tvoje sbírka, hvězda po hvězdě.",
+    "artwork": "Sběratelská kniha · Česká obálka"
+  },
+  "news": {
+    "eyebrow": "Ze světa Horse Stars",
+    "title": "HORSE STARS",
+    "accent": "NEWS.",
+    "text": "Příběhy, nové karty a překvapení ze světa Horse Stars.",
+    "tag": "Nové karty. Nové příběhy. Buď zvědavý.",
+    "preview": "První pohled",
+    "episode": "Tvoje další dobrodružství začíná tady",
+    "soon": "První díl již brzy",
+    "play": "Přehrát video Horse Stars News",
+    "cta": "Sledovat na YouTube",
+    "channelSoon": "Odkaz na kanál již brzy",
+    "privacy": "Video se načte až po stisknutí přehrávání.",
+    "posterAlt": "Náhled Horse Stars News — tři koně vstříc novému dobrodružství",
+    "close": "Zavřít video",
+    "titleVideo": "Horse Stars News — hlavní video"
+  },
+  "buy": {
+    "eyebrow": "Tvůj další balíček už čeká",
+    "title": "NAJDI",
+    "accent": "HORSE STARS.",
+    "text": "Horse Stars míří do vybraných jezdeckých škol, obchodů a prodejen.",
+    "status": "Připravujeme první prodejní místa",
+    "availability": "Seznam prodejců se připravuje. Vrať se a najdi nejbližší prodejnu Horse Stars.",
+    "cta": "Kde koupit",
+    "locations": "Novinky o prodejcích",
+    "contact": "Zeptat se na dostupnost",
+    "country": "Země",
+    "empty": "Prodejní místa oznámíme zde."
+  },
+  "retail": {
+    "eyebrow": "Pojďme společně tvořit",
+    "title": "PŘIVEĎ HORSE STARS",
+    "accent": "DO SVÉ PRODEJNY.",
+    "text": "Chcete prodávat Horse Stars? Rádi se spojíme s prodejci, jezdeckými školami a distribučními partnery.",
+    "audience": "Jezdecké obchody · Jezdecké školy · Hračky a hobby · Distributoři",
+    "cta": "Staňte se prodejcem",
+    "subject": "Horse Stars — spolupráce s prodejci"
+  },
+  "closing": {
+    "eyebrow": "Svět, který čeká na tvou sbírku",
+    "first": "KAŽDÁ KARTA JE HVĚZDA.",
+    "second": "KAŽDÁ SBÍRKA",
+    "third": "JE TVŮJ PŘÍBĚH.",
+    "back": "Zpátky ke hvězdám",
+    "alt": "Koně volně běžící vodou ve zlaté horské krajině"
+  },
+  "footer": {
+    "line": "Malá karta. Celý svět možností.",
+    "rights": "HORSE STARS. Všechna práva vyhrazena.",
+    "edition": "Původní kolekce · 102 koní",
+    "explore": "Prozkoumat",
+    "connect": "Zůstaňme v kontaktu",
+    "contact": "Kontakt",
+    "horsedex": "HorseDex",
+    "play": "Jak hrát",
+    "book": "Sběratelská kniha",
+    "buy": "Kde koupit",
+    "news": "Horse Stars News",
+    "retailers": "Pro prodejce",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "soon": "Již brzy",
+    "privacy": "Soukromí",
+    "terms": "Podmínky",
+    "legal": "Právní informace",
+    "legalNote": "Právní dokumenty zveřejníme před spuštěním.",
+    "language": "Jazyk"
+  },
+  "dex": {
+    "title": "HORSEDEX",
+    "subtitle": "102 KONÍ K OBJEVOVÁNÍ",
+    "eyebrow": "Každá hvězda. Každý příběh. Jedna kolekce.",
+    "description": "Objev koně, porovnej jejich sílu a najdi svého dalšího oblíbence.",
+    "sample": "První pohled: {count} ověřených koní. Kompletní kolekce 102 koní se připravuje.",
+    "search": "Hledat koně",
+    "placeholder": "Najdi koně podle jména…",
+    "breed": "Plemeno",
+    "rarity": "Rarita",
+    "edition": "Edice",
+    "sort": "Seřadit podle",
+    "allBreeds": "Všechna plemena",
+    "allRarities": "Všechny rarity",
+    "allEditions": "Všechny edice",
+    "number": "Číslo · vzestupně",
+    "score": "Od nejvyšší hodnoty",
+    "results": "{count} z {total} koní",
+    "clear": "Zrušit filtry",
+    "emptyTitle": "ZATÍM ŽÁDNÉ HVĚZDY.",
+    "emptyText": "Zkus jiné jméno nebo změň filtry. Tvůj další oblíbenec možná čeká hned za rohem.",
+    "nojs": "Zobrazeni jsou všichni ukázkoví koně. Pro hledání, filtrování a řazení povol JavaScript.",
+    "back": "Zpět do HorseDexu",
+    "previous": "Předchozí kůň",
+    "next": "Další kůň",
+    "collectionNumber": "Číslo v kolekci",
+    "total": "Celkové skóre",
+    "stats": "Síla, která se skrývá za hvězdou",
+    "story": "Každý kůň má svůj příběh",
+    "moreBreed": "DALŠÍ KONĚ: {breed}",
+    "relatedEmpty": "Další koně tohoto plemene přibudou s rozšířením kolekce.",
+    "relatedLabel": "Další koně stejného plemene",
+    "browseAll": "Prozkoumat kolekci",
+    "editionLabel": "Edice",
+    "cardAlt": "{name} — sběratelská karta Horse Stars, {rarity}",
+    "metaDescription": "Poznej koně {name}, plemeno {breed}, číslo {id}. Objev kartu rarity {rarity}, vlastnosti a příběh v Horse Stars HorseDexu.",
+    "indexMeta": "Prozkoumej Horse Stars HorseDex. Hledej koně, objevuj plemena a rarity a porovnávej Rychlost, Sílu, Skok, Chytrost a Celkem.",
+    "bonus": "Bonus",
+    "sampleNav": "Procházíš dostupné ukázkové koně",
+    "first": "První dostupný kůň",
+    "last": "Poslední dostupný kůň"
+  },
+  "editions": {
+    "base": "Základní",
+    "champion": "Champion Edition"
+  }
+}

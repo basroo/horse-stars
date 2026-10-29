@@ -1,0 +1,35 @@
+---
+import { Image, getImage } from 'astro:assets';
+import hero from '../../public/images/hero/hero-main.jpg';
+import mobile from '../../public/images/hero/hero-mobile.jpg';
+import Icon from './Icon.astro';
+import { collection } from '../data/collection';
+import type { Copy, Locale } from '../i18n';
+import { localizedPath } from '../i18n/paths';
+interface Props { copy: Copy; locale?: Locale }
+const { copy: t, locale = 'en' } = Astro.props;
+const mobileImage = await getImage({ src: mobile, width: 768, format: 'webp', quality: 85 });
+---
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-visual">
+    <picture>
+      <source media="(max-width: 639px)" srcset={mobileImage.src} width="768" height="768" />
+      <Image src={hero} alt={t.hero.image} widths={[640,960,1280,1536]} sizes="(min-width: 1024px) 58vw, 100vw" loading="eager" fetchpriority="high" quality={85} />
+    </picture>
+    <div class="image-caption"><span class="live-dot"></span>{t.hero.note}</div>
+  </div>
+  <div class="container hero-container">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="gold-line"></span>{t.hero.eyebrow}</p>
+      <h1 id="hero-title"><span>{t.hero.collect}</span><span>{t.hero.trade}</span><span class="outline-type">{t.hero.play}<Icon name="star" /></span></h1>
+      <div class="collection-count"><strong>{collection.total}</strong><span>{t.hero.count}</span></div>
+      <p class="hero-description">{t.hero.description}</p>
+      <div class="hero-actions">
+        <a class="button button-gold" href={localizedPath('/horses/',locale)}>{t.hero.primary}<Icon /></a>
+        <a class="future-link" href="#how-to-play"><span>{t.hero.secondary}<Icon name="arrow" /></span></a>
+      </div>
+    </div>
+  </div>
+  <a class="hero-scroll" href="#collection"><Icon name="down" />{t.hero.scroll}</a>
+  <span class="hero-index" aria-hidden="true">01 — 02</span>
+</section>

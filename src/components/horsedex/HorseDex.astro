@@ -1,0 +1,36 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import HorseTile from './HorseTile.astro';
+import Icon from '../Icon.astro';
+import { orderedHorses, collection } from '../../data/collection';
+import { getCopy, breedLabel, editionLabel, type Locale } from '../../i18n';
+import '../../styles/horsedex.css';
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const t = getCopy(locale);
+const breeds = ['Arabian','Friesian','American Quarter','Hanoverian','Andalusian','Mustang','Appaloosa','Czech Warmblood','Thoroughbred','Mysterian'];
+const editions = [...new Set(orderedHorses.map(horse => horse.edition))];
+const rarities = ['standard','elite','epic','legend'] as const;
+---
+<SiteLayout locale={locale} title={`${t.dex.title} — HORSE STARS`} description={t.dex.indexMeta}>
+  <section class="dex-intro" aria-labelledby="dex-title"><div class="container dex-intro-inner"><div><p class="eyebrow"><Icon name="star" />{t.dex.eyebrow}</p><h1 id="dex-title">{t.dex.title}<span class="dex-title-dot">.</span></h1><p class="dex-subtitle">{t.dex.subtitle}</p></div><div class="dex-intro-note"><Icon name="star" /><p>{t.dex.description}</p><span>001 — {collection.total}</span></div></div></section>
+  <section class="dex-browser container" aria-label={t.dex.title} data-dex>
+    <p class="dex-sample-note">{t.dex.sample.replace('{count}', String(orderedHorses.length))}</p>
+    <form class="dex-filters" role="search" data-dex-controls hidden>
+      <label class="dex-search"><span>{t.dex.search}</span><input type="search" name="q" placeholder={t.dex.placeholder} autocomplete="off" maxlength="100" /><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6" /><path d="m15 15 5 5" /></svg></label>
+      <div class="dex-selects">
+        <label><span>{t.dex.breed}</span><select name="breed"><option value="">{t.dex.allBreeds}</option>{breeds.map(breed => <option value={breed}>{breedLabel(breed,t)}</option>)}</select></label>
+        <label><span>{t.dex.rarity}</span><select name="rarity"><option value="">{t.dex.allRarities}</option>{rarities.map(rarity => <option value={rarity}>{t.rarities[rarity]}</option>)}</select></label>
+        <label><span>{t.dex.edition}</span><select name="edition"><option value="">{t.dex.allEditions}</option>{editions.map(edition => <option value={edition}>{editionLabel(edition,t)}</option>)}</select></label>
+        <label><span>{t.dex.sort}</span><select name="sort"><option value="number">{t.dex.number}</option>{(['total','speed','power','jump','brains'] as const).map(stat => <option value={stat}>{t.collection[stat]} · {t.dex.score}</option>)}</select></label>
+      </div>
+      <div class="dex-results-bar"><output data-results data-template={t.dex.results} aria-live="polite" aria-atomic="true">{t.dex.results.replace('{count}',String(orderedHorses.length)).replace('{total}',String(orderedHorses.length))}</output><button type="reset">{t.dex.clear}<span aria-hidden="true">↺</span></button></div>
+    </form>
+    <noscript><p class="dex-sample-note">{t.dex.nojs}</p></noscript>
+    <div class="dex-grid" data-dex-grid>{orderedHorses.map(horse => <HorseTile horse={horse} copy={t} locale={locale} />)}</div>
+    <div class="dex-empty" data-empty hidden><Icon name="star" /><h2>{t.dex.emptyTitle}</h2><p>{t.dex.emptyText}</p><button type="button" data-clear class="button button-gold">{t.dex.clear}<Icon /></button></div>
+  </section>
+</SiteLayout>
+<script>
+  import '../../scripts/horsedex';
+</script>

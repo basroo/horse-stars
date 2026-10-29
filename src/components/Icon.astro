@@ -1,0 +1,10 @@
+---
+interface Props { name?: 'arrow' | 'star' | 'down' | 'close'; class?: string }
+const { name = 'arrow', class: className } = Astro.props;
+---
+<svg class={className} width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  {name === 'arrow' && <path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" />}
+  {name === 'down' && <path d="M12 4v15m-6-6 6 6 6-6" stroke="currentColor" stroke-width="1.6" />}
+  {name === 'star' && <path d="m12 1 2.8 7.9L23 12l-8.2 3.1L12 23l-2.8-7.9L1 12l8.2-3.1L12 1Z" fill="currentColor" />}
+  {name === 'close' && <path d="m6 6 12 12M6 18 18 6" stroke="currentColor" stroke-width="1.6" />}
+</svg>

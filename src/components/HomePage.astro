@@ -1,0 +1,29 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Hero from './Hero.astro';
+import Collection from './Collection.astro';
+import HowToPlay from './HowToPlay.astro';
+import SpecialHorses from './SpecialHorses.astro';
+import ChampionTeaser from './ChampionTeaser.astro';
+import CollectorsBook from './CollectorsBook.astro';
+import News from './News.astro';
+import WhereToBuy from './WhereToBuy.astro';
+import Retailers from './Retailers.astro';
+import BrandMoment from './BrandMoment.astro';
+import { getCopy, type Locale } from '../i18n';
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const copy = getCopy(locale);
+---
+<SiteLayout locale={locale}>
+  <Hero copy={copy} locale={locale} />
+  <Collection copy={copy} locale={locale} />
+  <HowToPlay copy={copy} />
+  <SpecialHorses copy={copy} />
+  <ChampionTeaser copy={copy} />
+  <CollectorsBook copy={copy} />
+  <News copy={copy} />
+  <WhereToBuy copy={copy} />
+  <Retailers copy={copy} />
+  <BrandMoment copy={copy} />
+</SiteLayout>

@@ -1,0 +1,9 @@
+---
+import HorseDetail from '../../components/horsedex/HorseDetail.astro';
+import { horses } from '../../data/collection';
+export function getStaticPaths() {
+  return horses.map(horse => ({ params: { slug: horse.slug }, props: { horse } }));
+}
+const { horse } = Astro.props;
+---
+<HorseDetail horse={horse} locale="en" />

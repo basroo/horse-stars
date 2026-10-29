@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import { horses } from '../data/collection';
+import { cardImages } from '../data/assets';
+import Icon from './Icon.astro';
+import type { Copy } from '../i18n';
+interface Props { copy: Copy }
+const { copy: t } = Astro.props;
+const rarities = ['elite', 'epic', 'legend'] as const;
+---
+<section id="special-horses" class="special-section section-space" aria-labelledby="special-title">
+  <div class="container">
+    <div class="section-kicker"><p class="eyebrow"><Icon name="star" />{t.special.eyebrow}</p><span class="section-number">03 / {t.special.original}</span></div>
+    <div class="special-heading"><h2 id="special-title">{t.special.title}<br /><span>{t.special.accent}</span></h2><p class="section-description">{t.special.intro}</p></div>
+  </div>
+  <div class="rarity-procession" tabindex="0" role="region" aria-label={t.special.swipe}>
+    {rarities.map((rarity, index) => {
+      const horse = horses.find(h => h.rarity === rarity)!;
+      return <article class={`special-card special-${rarity}`}>
+        <div class="special-card-label"><span>0{index + 1}</span><span>{t.rarities[rarity]}</span><Icon name="star" /></div>
+        <div class="special-card-art"><span class="rarity-orbit" aria-hidden="true"></span><Image src={cardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[rarity]}`} widths={[240,360,540,680]} sizes="(max-width: 639px) 65vw, 300px" width={300} loading="lazy" /></div>
+        <p>{t.special.descriptions[rarity]}</p>
+      </article>;
+    })}
+  </div>
+  <div class="container rarity-footer"><span>{t.special.original}</span><span aria-hidden="true">ELITE <span>→</span> EPIC <span>→</span> LEGEND</span></div>
+</section>

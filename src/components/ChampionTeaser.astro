@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import gold from '../../public/images/specials/champion-gold.png';
+import silver from '../../public/images/specials/champion-silver.png';
+import bronze from '../../public/images/specials/champion-bronze.png';
+import { championEdition } from '../data/site';
+import Icon from './Icon.astro';
+import type { Copy } from '../i18n';
+interface Props { copy: Copy }
+const { copy: t } = Astro.props;
+const images = { gold, silver, bronze };
+---
+<section id="champion-edition" class="champion-section" aria-labelledby="champion-title">
+  <div class="container champion-layout">
+    <div class="champion-copy"><p class="eyebrow"><Icon name="star" />{t.champion.eyebrow}</p><p class="champion-edition-label">{t.champion.edition}</p><h2 id="champion-title">{t.champion.title}<br /><span>{t.champion.accent}</span></h2><p class="champion-count">{t.champion.count}<Icon name="star" /></p><p class="section-description">{t.champion.text}</p><span class="coming-label">{t.champion.soon}</span></div>
+    <div class="champion-fan" aria-label={t.champion.edition}>
+      {championEdition.cards.map(card => <Image class={`champion-${card.finish}`} src={images[card.finish as keyof typeof images]} alt={t.champion.alt.replace('{finish}', t.champion.finishes[card.finish as keyof typeof t.champion.finishes])} width={260} widths={[200,300,520]} sizes="(max-width: 639px) 42vw, 240px" loading="lazy" />)}
+      <span class="champion-fan-caption">{t.champion.edition} / {championEdition.total}</span>
+    </div>
+  </div>
+</section>

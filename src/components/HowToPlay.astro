@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+import { battleHorses } from '../data/collection';
+import { cardImages } from '../data/assets';
+import Icon from './Icon.astro';
+import StatIcon from './StatIcon.astro';
+import type { Copy } from '../i18n';
+interface Props { copy: Copy }
+const { copy: t } = Astro.props;
+const stats = ['speed', 'power', 'jump', 'brains', 'total'] as const;
+const contenders = battleHorses;
+const winner = contenders[0].stats.speed > contenders[1].stats.speed ? contenders[0] : contenders[1];
+---
+<section id="how-to-play" class="play-section section-space" aria-labelledby="play-title">
+  <div class="container">
+    <div class="section-kicker"><p class="eyebrow"><Icon name="star" />{t.play.eyebrow}</p><span class="section-number">02 / {t.play.rules}</span></div>
+    <div class="play-heading"><h2 id="play-title">{t.play.title}<br /><span>{t.play.accent}</span></h2><p class="section-description">{t.play.intro}</p></div>
+    <div class="play-layout">
+      <div class="battle-demo" data-battle data-wins={t.play.wins} data-tie={t.play.tie}>
+        <p class="eyebrow">{t.play.demo}</p>
+        <div class="battle-cards">
+          {contenders.map(horse => <div class:list={['battle-contender', { 'is-winner': horse.id === winner.id }]} data-contender data-name={horse.name} data-stats={JSON.stringify(Object.fromEntries(stats.map(stat => [stat, stat === "total" ? horse.total : horse.stats[stat]])))}>
+            <Image src={cardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[horse.rarity as keyof typeof t.rarities]}`} widths={[200,320,480]} sizes="(max-width: 639px) 35vw, 220px" width={220} loading="lazy" />
+            <div class="battle-value"><span>{horse.name}</span><strong data-value>{horse.stats.speed}</strong></div>
+          </div>)}
+          <span class="battle-versus">{t.play.versus}</span>
+        </div>
+        <div class="stat-selector" role="group" aria-label={t.play.demo}>
+          {stats.map((stat, index) => <button type="button" data-stat={stat} aria-pressed={index === 0} title={t.collection[stat]}><StatIcon stat={stat} /><span>{t.collection[stat]}</span></button>)}
+        </div>
+        <p class="battle-result" aria-live="polite" aria-atomic="true"><Icon name="star" /><span data-result>{winner.name} {t.play.wins}</span></p>
+        <p class="battle-hint">{t.play.demoHint}</p>
+      </div>
+      <div class="play-instructions">
+        <ol class="play-steps">
+          {t.play.steps.map((step, i) => <li><span class="step-number">0{i + 1}</span><div><h3>{step.title}</h3><p>{step.text}</p>{i === 1 && <div class="round-order" aria-label={t.play.rounds}>{stats.map((stat, index) => <span title={t.collection[stat]}><small>{index + 1}</small><StatIcon stat={stat} /><span class="sr-only">{t.collection[stat]}</span></span>)}</div>}</div></li>)}
+        </ol>
+        <details class="rules-details"><summary>{t.play.rulesSummary}<span aria-hidden="true">+</span></summary><p>{t.play.rulesText}</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-battle]').forEach(demo => {
+    const cards = [...demo.querySelectorAll<HTMLElement>('[data-contender]')];
+    const buttons = [...demo.querySelectorAll<HTMLButtonElement>('[data-stat]')];
+    buttons.forEach(button => button.addEventListener('click', () => {
+      const stat = button.dataset.stat!;
+      const scores = cards.map(card => JSON.parse(card.dataset.stats!) as Record<string, number>);
+      const tied = scores[0][stat] === scores[1][stat];
+      const winner = (tied ? scores[0].total > scores[1].total : scores[0][stat] > scores[1][stat]) ? 0 : 1;
+      buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      cards.forEach((card, index) => {
+        card.classList.toggle('is-winner', index === winner);
+        card.querySelector('[data-value]')!.textContent = String(scores[index][stat]);
+      });
+      demo.querySelector('[data-result]')!.textContent = `${cards[winner].dataset.name} ${demo.dataset.wins}${tied ? ` · ${demo.dataset.tie}` : ''}`;
+    }));
+  });
+</script>

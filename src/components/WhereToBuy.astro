@@ -1,0 +1,18 @@
+---
+import { retailers, site } from '../data/site';
+import Icon from './Icon.astro';
+import type { Copy } from '../i18n';
+interface Props { copy: Copy }
+const { copy: t } = Astro.props;
+---
+<section id="where-to-buy" class="buy-section section-space" aria-labelledby="buy-title">
+  <div class="container buy-layout">
+    <div><p class="eyebrow"><Icon name="star" />{t.buy.eyebrow}</p><h2 id="buy-title">{t.buy.title}<br /><span>{t.buy.accent}</span></h2><p class="section-description">{t.buy.text}</p><a class="text-link" href="#retailer-locations">{t.buy.cta}<Icon /></a></div>
+    <div id="retailer-locations" class="retailer-locations">
+      <div class="location-symbol" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M49 26c0 13-17 28-17 28S15 39 15 26a17 17 0 1 1 34 0Z" stroke="currentColor" stroke-width="1.5" /><path d="m32 16 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z" fill="currentColor" /></svg></div>
+      <p class="eyebrow">{t.buy.locations}</p><h3>{t.buy.status}</h3>
+      {retailers.length ? <ul class="retailer-list">{retailers.map(retailer => <li><strong>{retailer.url ? <a href={retailer.url} target="_blank" rel="noopener noreferrer">{retailer.name} ↗</a> : retailer.name}</strong><span>{retailer.city}, {retailer.country}</span></li>)}</ul> : <p>{t.buy.availability}</p>}
+      <a href={`mailto:${site.email}`} class="text-link">{t.buy.contact}<Icon /></a>
+    </div>
+  </div>
+</section>

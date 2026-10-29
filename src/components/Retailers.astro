@@ -1,0 +1,10 @@
+---
+import { site } from '../data/site';
+import Icon from './Icon.astro';
+import type { Copy } from '../i18n';
+interface Props { copy: Copy }
+const { copy: t } = Astro.props;
+---
+<section id="retailers" class="retail-section" aria-labelledby="retail-title">
+  <div class="container retail-layout"><div><p class="eyebrow">{t.retail.eyebrow}</p><h2 id="retail-title">{t.retail.title}<br /><span>{t.retail.accent}</span></h2><p class="retail-audience">{t.retail.audience}</p></div><div><p class="section-description">{t.retail.text}</p><a class="button button-purple" href={`mailto:${site.email}?subject=${encodeURIComponent(t.retail.subject)}`}>{t.retail.cta}<Icon /></a></div></div>
+</section>
