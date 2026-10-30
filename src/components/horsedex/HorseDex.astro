@@ -8,9 +8,9 @@ import '../../styles/horsedex.css';
 interface Props { locale?: Locale }
 const { locale = 'en' } = Astro.props;
 const t = getCopy(locale);
-const breeds = ['Arabian','Friesian','American Quarter','Hanoverian','Andalusian','Mustang','Appaloosa','Czech Warmblood','Thoroughbred','Mysterian'];
+const breeds = [...new Set(orderedHorses.map(horse => horse.breed))];
 const editions = [...new Set(orderedHorses.map(horse => horse.edition))];
-const rarities = ['standard','elite','epic','legend'] as const;
+const rarities = ['normal','elite','epic','legend'] as const;
 ---
 <SiteLayout locale={locale} title={`${t.dex.title} — HORSE STARS`} description={t.dex.indexMeta}>
   <section class="dex-intro" aria-labelledby="dex-title"><div class="container dex-intro-inner"><div><p class="eyebrow"><Icon name="star" />{t.dex.eyebrow}</p><h1 id="dex-title">{t.dex.title}<span class="dex-title-dot">.</span></h1><p class="dex-subtitle">{t.dex.subtitle}</p></div><div class="dex-intro-note"><Icon name="star" /><p>{t.dex.description}</p><span>001 — {collection.total}</span></div></div></section>

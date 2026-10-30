@@ -1,10 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Horse Stars collection",
-  "type": "array",
-  "items": {
+  "type": "object",
+  "required": ["schemaVersion", "collection", "horses"],
+  "properties": {
+    "schemaVersion": { "type": "integer" },
+    "collection": { "type": "object" },
+    "horses": { "type": "array", "items": {
     "type": "object", "additionalProperties": false,
-    "required": ["id", "number", "name", "slug", "breed", "edition", "rarity", "stats", "total", "images"],
+    "required": ["id", "number", "name", "slug", "breed", "isFoal", "edition", "rarity", "stats", "total", "story", "images"],
     "properties": {
       "id": { "type": "string", "minLength": 1 },
       "number": { "type": "integer", "minimum": 1 },
@@ -12,7 +16,8 @@
       "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
       "breed": { "type": "string", "minLength": 1 },
       "edition": { "type": "string", "minLength": 1 },
-      "rarity": { "enum": ["standard", "elite", "epic", "legend"] },
+      "isFoal": { "type": "boolean" },
+      "rarity": { "enum": ["normal", "elite", "epic", "legend"] },
       "stats": {
         "type": "object", "additionalProperties": false,
         "required": ["speed", "power", "jump", "brains"],
@@ -22,16 +27,11 @@
         }
       },
       "total": { "type": "integer", "minimum": 0 },
-      "title": { "type": "string" }, "tagline": { "type": "string" },
+      "story": { "type": ["object", "null"] },
       "images": {
         "type": "object", "additionalProperties": false, "required": ["card"],
         "properties": { "card": { "type": "string", "pattern": "^/images/" }, "hero": { "type": "string", "pattern": "^/images/" } }
       },
-      "featured": { "type": "boolean" }, "battleDemo": { "type": "boolean" },
-      "bonus": {
-        "type": "object", "additionalProperties": false, "required": ["stat", "amount"],
-        "properties": { "stat": { "enum": ["speed", "power", "jump", "brains"] }, "amount": { "type": "integer", "minimum": 1 } }
-      }
     }
-  }
+  } }
 }

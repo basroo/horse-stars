@@ -48,6 +48,7 @@
     "brains": "Brains"
   },
   "rarities": {
+    "normal": "Standard",
     "elite": "Elite",
     "epic": "Epic",
     "legend": "Legend",
@@ -218,7 +219,7 @@
     "subtitle": "102 HORSES TO DISCOVER",
     "eyebrow": "Every star. Every story. One collection.",
     "description": "Discover the horses, compare their strengths, and find your next favourite.",
-    "sample": "A first look: {count} verified horses. The full 102-horse collection is on its way.",
+    "sample": "The complete collection: {count} verified horses.",
     "search": "Search horses",
     "placeholder": "Find a horse by name…",
     "breed": "Breed",
@@ -234,7 +235,7 @@
     "clear": "Clear filters",
     "emptyTitle": "NO STARS FOUND. YET.",
     "emptyText": "Try another name or change your filters. Your next favourite could be one search away.",
-    "nojs": "All sample horses are shown. Enable JavaScript to search, filter and sort.",
+    "nojs": "All horses are shown. Enable JavaScript to search, filter and sort.",
     "back": "Back to HorseDex",
     "previous": "Previous horse",
     "next": "Next horse",
@@ -251,7 +252,7 @@
     "metaDescription": "Meet {name}, {breed} horse {id}. Discover the {rarity} card, statistics and story in the Horse Stars HorseDex.",
     "indexMeta": "Explore the Horse Stars HorseDex. Search horses, discover breeds and rarities, and compare Speed, Power, Jump, Brains and Total.",
     "bonus": "Bonus",
-    "sampleNav": "Browsing the available sample horses",
+    "sampleNav": "Browsing the complete Horse Stars collection",
     "first": "First available horse",
     "last": "Last available horse"
   },

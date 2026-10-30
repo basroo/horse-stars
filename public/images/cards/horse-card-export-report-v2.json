@@ -1,0 +1,1339 @@
+{
+  "dataset": {
+    "total_horses": 102,
+    "normal_horses": 88,
+    "special_horses": 14
+  },
+  "exported": [
+    {
+      "type": "regular",
+      "page": 2,
+      "id": "HS002",
+      "name": "Aramea",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs002-aramea.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 3,
+      "id": "HS003",
+      "name": "Baiza",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs003-baiza.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 4,
+      "id": "HS004",
+      "name": "Arabas",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs004-arabas.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 5,
+      "id": "HS005",
+      "name": "Aladin",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs005-aladin.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 6,
+      "id": "HS006",
+      "name": "Fatima",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs006-fatima.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 7,
+      "id": "HS007",
+      "name": "Laila",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs007-laila.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 8,
+      "id": "HS008",
+      "name": "Shazess",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs008-shazess.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 9,
+      "id": "HS010",
+      "name": "Turek",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs010-turek.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 11,
+      "id": "HS012",
+      "name": "Jip",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs012-jip.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 12,
+      "id": "HS013",
+      "name": "Emma",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs013-emma.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 13,
+      "id": "HS014",
+      "name": "Laura",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs014-laura.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 14,
+      "id": "HS015",
+      "name": "Ozzy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs015-ozzy.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 15,
+      "id": "HS017",
+      "name": "Wind",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs017-wind.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 16,
+      "id": "HS018",
+      "name": "Zelda",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs018-zelda.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 17,
+      "id": "HS019",
+      "name": "Wimm",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs019-wimm.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 18,
+      "id": "HS020",
+      "name": "Max",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs020-max.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 19,
+      "id": "HS021",
+      "name": "Billy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs021-billy.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 20,
+      "id": "HS022",
+      "name": "Donald",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs022-donald.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 21,
+      "id": "HS023",
+      "name": "Jane",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs023-jane.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 22,
+      "id": "HS024",
+      "name": "Jazz",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs024-jazz.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 23,
+      "id": "HS025",
+      "name": "Jack",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs025-jack.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 24,
+      "id": "HS027",
+      "name": "Love",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs027-love.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 25,
+      "id": "HS028",
+      "name": "Taylor",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs028-taylor.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 26,
+      "id": "HS029",
+      "name": "Dolly",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs029-dolly.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 27,
+      "id": "HS030",
+      "name": "Charlot",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs030-charlot.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 28,
+      "id": "HS031",
+      "name": "Eva",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs031-eva.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 29,
+      "id": "HS032",
+      "name": "Hansi",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs032-hansi.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 30,
+      "id": "HS033",
+      "name": "Ursula",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs033-ursula.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 31,
+      "id": "HS034",
+      "name": "Nina",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs034-nina.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 32,
+      "id": "HS035",
+      "name": "Jan",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs035-jan.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 33,
+      "id": "HS036",
+      "name": "Isabella",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs036-isabella.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 34,
+      "id": "HS037",
+      "name": "Sisi",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs037-sisi.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 35,
+      "id": "HS038",
+      "name": "Mia",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs038-mia.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 36,
+      "id": "HS040",
+      "name": "Bernd",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs040-bernd.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 37,
+      "id": "HS041",
+      "name": "Vigo",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs041-vigo.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 38,
+      "id": "HS042",
+      "name": "Zeta",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs042-zeta.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 39,
+      "id": "HS043",
+      "name": "Miguel",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs043-miguel.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 40,
+      "id": "HS044",
+      "name": "Amador",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs044-amador.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 41,
+      "id": "HS045",
+      "name": "Diego",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs045-diego.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 42,
+      "id": "HS047",
+      "name": "Amira",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs047-amira.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 43,
+      "id": "HS048",
+      "name": "Angela",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs048-angela.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 44,
+      "id": "HS049",
+      "name": "Luna",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs049-luna.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 45,
+      "id": "HS050",
+      "name": "Meteor",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs050-meteor.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 47,
+      "id": "HS053",
+      "name": "River",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs053-river.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 48,
+      "id": "HS054",
+      "name": "Amber",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs054-amber.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 49,
+      "id": "HS055",
+      "name": "Blaze",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs055-blaze.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 50,
+      "id": "HS057",
+      "name": "Sunny",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs057-sunny.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 51,
+      "id": "HS058",
+      "name": "Zoe",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs058-zoe.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 52,
+      "id": "HS059",
+      "name": "Runner",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs059-runner.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 53,
+      "id": "HS060",
+      "name": "DJ",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs060-dj.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 54,
+      "id": "HS061",
+      "name": "Dakota",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs061-dakota.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 55,
+      "id": "HS062",
+      "name": "Apache",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs062-apache.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 56,
+      "id": "HS063",
+      "name": "Pipi",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs063-pipi.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 57,
+      "id": "HS064",
+      "name": "Isamar",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs064-isamar.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 58,
+      "id": "HS065",
+      "name": "Rio",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs065-rio.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 59,
+      "id": "HS067",
+      "name": "Cava",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs067-cava.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 60,
+      "id": "HS068",
+      "name": "Rebenga",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs068-rebenga.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 61,
+      "id": "HS069",
+      "name": "Zeta",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs069-zeta-69.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 62,
+      "id": "HS070",
+      "name": "Spotty",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs070-spotty.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 63,
+      "id": "HS071",
+      "name": "Dan",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs071-dan.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 64,
+      "id": "HS072",
+      "name": "Eliza",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs072-eliza.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 65,
+      "id": "HS074",
+      "name": "Bro",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs074-bro.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 66,
+      "id": "HS075",
+      "name": "Aya",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs075-aya.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 67,
+      "id": "HS076",
+      "name": "Kamo",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs076-kamo.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 68,
+      "id": "HS077",
+      "name": "Lucia",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs077-lucia.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 69,
+      "id": "HS078",
+      "name": "Kveta",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs078-kveta.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 70,
+      "id": "HS079",
+      "name": "Mister",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs079-mister.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 71,
+      "id": "HS080",
+      "name": "Yulia",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs080-yulia.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 72,
+      "id": "HS081",
+      "name": "Oliver",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs081-oliver.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 73,
+      "id": "HS082",
+      "name": "C Girl",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs082-c-girl.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 74,
+      "id": "HS083",
+      "name": "Eddy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs083-eddy.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 75,
+      "id": "HS084",
+      "name": "Victoria",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs084-victoria.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 76,
+      "id": "HS086",
+      "name": "James",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs086-james.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 77,
+      "id": "HS087",
+      "name": "London",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs087-london.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 78,
+      "id": "HS088",
+      "name": "Mary",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs088-mary.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 79,
+      "id": "HS089",
+      "name": "Rooney",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs089-rooney.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 80,
+      "id": "HS090",
+      "name": "Swift",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs090-swift.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 81,
+      "id": "HS091",
+      "name": "Savannah",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs091-savannah.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 82,
+      "id": "HS092",
+      "name": "Oceana",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs092-oceana.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 83,
+      "id": "HS094",
+      "name": "Goldy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs094-goldy.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 84,
+      "id": "HS095",
+      "name": "Sparkle",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs095-sparkle.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 85,
+      "id": "HS096",
+      "name": "Arboris",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs096-arboris.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 86,
+      "id": "HS098",
+      "name": "Mirage",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs098-mirage.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 87,
+      "id": "HS099",
+      "name": "Zee",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs099-zee.webp",
+      "matched_by": "page_order"
+    },
+    {
+      "type": "regular",
+      "page": 88,
+      "id": "HS101",
+      "name": "Lumina",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs101-lumina.webp",
+      "matched_by": "page_order"
+    }
+  ],
+  "skipped_existing": [
+    {
+      "type": "regular",
+      "page": 1,
+      "id": "HS001",
+      "name": "Ezora",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs001-ezora.webp"
+    },
+    {
+      "type": "regular",
+      "page": 10,
+      "id": "HS011",
+      "name": "Flits",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs011-flits.webp"
+    },
+    {
+      "type": "regular",
+      "page": 46,
+      "id": "HS052",
+      "name": "Ash",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs052-ash.webp"
+    },
+    {
+      "type": "special",
+      "page": 1,
+      "id": "HS009",
+      "name": "Byzantis",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs009-byzantis.webp"
+    },
+    {
+      "type": "special",
+      "page": 2,
+      "id": "HS026",
+      "name": "Daisy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs026-daisy.webp"
+    },
+    {
+      "type": "special",
+      "page": 3,
+      "id": "HS039",
+      "name": "Helga",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs039-helga.webp"
+    },
+    {
+      "type": "special",
+      "page": 4,
+      "id": "HS056",
+      "name": "Champ",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs056-champ.webp"
+    },
+    {
+      "type": "special",
+      "page": 5,
+      "id": "HS066",
+      "name": "El Nero",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs066-el-nero.webp"
+    },
+    {
+      "type": "special",
+      "page": 6,
+      "id": "HS073",
+      "name": "Mila",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs073-mila.webp"
+    },
+    {
+      "type": "special",
+      "page": 7,
+      "id": "HS093",
+      "name": "Pantera",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs093-pantera.webp"
+    },
+    {
+      "type": "special",
+      "page": 8,
+      "id": "HS097",
+      "name": "Lev",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs097-lev.webp"
+    },
+    {
+      "type": "special",
+      "page": 9,
+      "id": "HS016",
+      "name": "Kayra",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs016-kayra.webp"
+    },
+    {
+      "type": "special",
+      "page": 10,
+      "id": "HS046",
+      "name": "Boaz",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs046-boaz.webp"
+    },
+    {
+      "type": "special",
+      "page": 11,
+      "id": "HS085",
+      "name": "Queen",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs085-queen.webp"
+    },
+    {
+      "type": "special",
+      "page": 12,
+      "id": "HS100",
+      "name": "Epix",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs100-epix.webp"
+    },
+    {
+      "type": "special",
+      "page": 13,
+      "id": "HS102",
+      "name": "Fenix",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs102-fenix.webp"
+    },
+    {
+      "type": "special",
+      "page": 14,
+      "id": "HS051",
+      "name": "Exon",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs051-exon.webp"
+    }
+  ],
+  "unmatched": [
+    {
+      "type": "special",
+      "page": 15,
+      "rendered_as": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/_unmatched/_unmatched-special-page-015.webp",
+      "text_preview": "HORSE STARS HORSE STARS TM TM"
+    }
+  ],
+  "duplicates": [],
+  "missing_regular_pages": [],
+  "regular": {
+    "pdf": "Cards-HS-regular print.pdf",
+    "pages": 88,
+    "expected_normal_horses": 88,
+    "page_count_matches": true
+  },
+  "present_after_export": [
+    {
+      "id": "HS001",
+      "name": "Ezora",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs001-ezora.webp"
+    },
+    {
+      "id": "HS002",
+      "name": "Aramea",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs002-aramea.webp"
+    },
+    {
+      "id": "HS003",
+      "name": "Baiza",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs003-baiza.webp"
+    },
+    {
+      "id": "HS004",
+      "name": "Arabas",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs004-arabas.webp"
+    },
+    {
+      "id": "HS005",
+      "name": "Aladin",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs005-aladin.webp"
+    },
+    {
+      "id": "HS006",
+      "name": "Fatima",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs006-fatima.webp"
+    },
+    {
+      "id": "HS007",
+      "name": "Laila",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs007-laila.webp"
+    },
+    {
+      "id": "HS008",
+      "name": "Shazess",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs008-shazess.webp"
+    },
+    {
+      "id": "HS009",
+      "name": "Byzantis",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs009-byzantis.webp"
+    },
+    {
+      "id": "HS010",
+      "name": "Turek",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs010-turek.webp"
+    },
+    {
+      "id": "HS011",
+      "name": "Flits",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs011-flits.webp"
+    },
+    {
+      "id": "HS012",
+      "name": "Jip",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs012-jip.webp"
+    },
+    {
+      "id": "HS013",
+      "name": "Emma",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs013-emma.webp"
+    },
+    {
+      "id": "HS014",
+      "name": "Laura",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs014-laura.webp"
+    },
+    {
+      "id": "HS015",
+      "name": "Ozzy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs015-ozzy.webp"
+    },
+    {
+      "id": "HS016",
+      "name": "Kayra",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs016-kayra.webp"
+    },
+    {
+      "id": "HS017",
+      "name": "Wind",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs017-wind.webp"
+    },
+    {
+      "id": "HS018",
+      "name": "Zelda",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs018-zelda.webp"
+    },
+    {
+      "id": "HS019",
+      "name": "Wimm",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs019-wimm.webp"
+    },
+    {
+      "id": "HS020",
+      "name": "Max",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs020-max.webp"
+    },
+    {
+      "id": "HS021",
+      "name": "Billy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs021-billy.webp"
+    },
+    {
+      "id": "HS022",
+      "name": "Donald",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs022-donald.webp"
+    },
+    {
+      "id": "HS023",
+      "name": "Jane",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs023-jane.webp"
+    },
+    {
+      "id": "HS024",
+      "name": "Jazz",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs024-jazz.webp"
+    },
+    {
+      "id": "HS025",
+      "name": "Jack",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs025-jack.webp"
+    },
+    {
+      "id": "HS026",
+      "name": "Daisy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs026-daisy.webp"
+    },
+    {
+      "id": "HS027",
+      "name": "Love",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs027-love.webp"
+    },
+    {
+      "id": "HS028",
+      "name": "Taylor",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs028-taylor.webp"
+    },
+    {
+      "id": "HS029",
+      "name": "Dolly",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs029-dolly.webp"
+    },
+    {
+      "id": "HS030",
+      "name": "Charlot",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs030-charlot.webp"
+    },
+    {
+      "id": "HS031",
+      "name": "Eva",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs031-eva.webp"
+    },
+    {
+      "id": "HS032",
+      "name": "Hansi",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs032-hansi.webp"
+    },
+    {
+      "id": "HS033",
+      "name": "Ursula",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs033-ursula.webp"
+    },
+    {
+      "id": "HS034",
+      "name": "Nina",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs034-nina.webp"
+    },
+    {
+      "id": "HS035",
+      "name": "Jan",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs035-jan.webp"
+    },
+    {
+      "id": "HS036",
+      "name": "Isabella",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs036-isabella.webp"
+    },
+    {
+      "id": "HS037",
+      "name": "Sisi",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs037-sisi.webp"
+    },
+    {
+      "id": "HS038",
+      "name": "Mia",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs038-mia.webp"
+    },
+    {
+      "id": "HS039",
+      "name": "Helga",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs039-helga.webp"
+    },
+    {
+      "id": "HS040",
+      "name": "Bernd",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs040-bernd.webp"
+    },
+    {
+      "id": "HS041",
+      "name": "Vigo",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs041-vigo.webp"
+    },
+    {
+      "id": "HS042",
+      "name": "Zeta",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs042-zeta.webp"
+    },
+    {
+      "id": "HS043",
+      "name": "Miguel",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs043-miguel.webp"
+    },
+    {
+      "id": "HS044",
+      "name": "Amador",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs044-amador.webp"
+    },
+    {
+      "id": "HS045",
+      "name": "Diego",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs045-diego.webp"
+    },
+    {
+      "id": "HS046",
+      "name": "Boaz",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs046-boaz.webp"
+    },
+    {
+      "id": "HS047",
+      "name": "Amira",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs047-amira.webp"
+    },
+    {
+      "id": "HS048",
+      "name": "Angela",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs048-angela.webp"
+    },
+    {
+      "id": "HS049",
+      "name": "Luna",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs049-luna.webp"
+    },
+    {
+      "id": "HS050",
+      "name": "Meteor",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs050-meteor.webp"
+    },
+    {
+      "id": "HS051",
+      "name": "Exon",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs051-exon.webp"
+    },
+    {
+      "id": "HS052",
+      "name": "Ash",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs052-ash.webp"
+    },
+    {
+      "id": "HS053",
+      "name": "River",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs053-river.webp"
+    },
+    {
+      "id": "HS054",
+      "name": "Amber",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs054-amber.webp"
+    },
+    {
+      "id": "HS055",
+      "name": "Blaze",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs055-blaze.webp"
+    },
+    {
+      "id": "HS056",
+      "name": "Champ",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs056-champ.webp"
+    },
+    {
+      "id": "HS057",
+      "name": "Sunny",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs057-sunny.webp"
+    },
+    {
+      "id": "HS058",
+      "name": "Zoe",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs058-zoe.webp"
+    },
+    {
+      "id": "HS059",
+      "name": "Runner",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs059-runner.webp"
+    },
+    {
+      "id": "HS060",
+      "name": "DJ",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs060-dj.webp"
+    },
+    {
+      "id": "HS061",
+      "name": "Dakota",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs061-dakota.webp"
+    },
+    {
+      "id": "HS062",
+      "name": "Apache",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs062-apache.webp"
+    },
+    {
+      "id": "HS063",
+      "name": "Pipi",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs063-pipi.webp"
+    },
+    {
+      "id": "HS064",
+      "name": "Isamar",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs064-isamar.webp"
+    },
+    {
+      "id": "HS065",
+      "name": "Rio",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs065-rio.webp"
+    },
+    {
+      "id": "HS066",
+      "name": "El Nero",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs066-el-nero.webp"
+    },
+    {
+      "id": "HS067",
+      "name": "Cava",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs067-cava.webp"
+    },
+    {
+      "id": "HS068",
+      "name": "Rebenga",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs068-rebenga.webp"
+    },
+    {
+      "id": "HS069",
+      "name": "Zeta",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs069-zeta-69.webp"
+    },
+    {
+      "id": "HS070",
+      "name": "Spotty",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs070-spotty.webp"
+    },
+    {
+      "id": "HS071",
+      "name": "Dan",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs071-dan.webp"
+    },
+    {
+      "id": "HS072",
+      "name": "Eliza",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs072-eliza.webp"
+    },
+    {
+      "id": "HS073",
+      "name": "Mila",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs073-mila.webp"
+    },
+    {
+      "id": "HS074",
+      "name": "Bro",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs074-bro.webp"
+    },
+    {
+      "id": "HS075",
+      "name": "Aya",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs075-aya.webp"
+    },
+    {
+      "id": "HS076",
+      "name": "Kamo",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs076-kamo.webp"
+    },
+    {
+      "id": "HS077",
+      "name": "Lucia",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs077-lucia.webp"
+    },
+    {
+      "id": "HS078",
+      "name": "Kveta",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs078-kveta.webp"
+    },
+    {
+      "id": "HS079",
+      "name": "Mister",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs079-mister.webp"
+    },
+    {
+      "id": "HS080",
+      "name": "Yulia",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs080-yulia.webp"
+    },
+    {
+      "id": "HS081",
+      "name": "Oliver",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs081-oliver.webp"
+    },
+    {
+      "id": "HS082",
+      "name": "C Girl",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs082-c-girl.webp"
+    },
+    {
+      "id": "HS083",
+      "name": "Eddy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs083-eddy.webp"
+    },
+    {
+      "id": "HS084",
+      "name": "Victoria",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs084-victoria.webp"
+    },
+    {
+      "id": "HS085",
+      "name": "Queen",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs085-queen.webp"
+    },
+    {
+      "id": "HS086",
+      "name": "James",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs086-james.webp"
+    },
+    {
+      "id": "HS087",
+      "name": "London",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs087-london.webp"
+    },
+    {
+      "id": "HS088",
+      "name": "Mary",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs088-mary.webp"
+    },
+    {
+      "id": "HS089",
+      "name": "Rooney",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs089-rooney.webp"
+    },
+    {
+      "id": "HS090",
+      "name": "Swift",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs090-swift.webp"
+    },
+    {
+      "id": "HS091",
+      "name": "Savannah",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs091-savannah.webp"
+    },
+    {
+      "id": "HS092",
+      "name": "Oceana",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs092-oceana.webp"
+    },
+    {
+      "id": "HS093",
+      "name": "Pantera",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs093-pantera.webp"
+    },
+    {
+      "id": "HS094",
+      "name": "Goldy",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs094-goldy.webp"
+    },
+    {
+      "id": "HS095",
+      "name": "Sparkle",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs095-sparkle.webp"
+    },
+    {
+      "id": "HS096",
+      "name": "Arboris",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs096-arboris.webp"
+    },
+    {
+      "id": "HS097",
+      "name": "Lev",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs097-lev.webp"
+    },
+    {
+      "id": "HS098",
+      "name": "Mirage",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs098-mirage.webp"
+    },
+    {
+      "id": "HS099",
+      "name": "Zee",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs099-zee.webp"
+    },
+    {
+      "id": "HS100",
+      "name": "Epix",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs100-epix.webp"
+    },
+    {
+      "id": "HS101",
+      "name": "Lumina",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs101-lumina.webp"
+    },
+    {
+      "id": "HS102",
+      "name": "Fenix",
+      "file": "/Users/phnl310224763/Desktop/horse-stars/public/images/cards/hs102-fenix.webp"
+    }
+  ],
+  "missing_after_export": []
+}

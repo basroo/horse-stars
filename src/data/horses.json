@@ -1,41 +1,2342 @@
-[
-  {
-    "id": "HS001", "number": 1, "name": "Ezora", "slug": "ezora", "breed": "Arabian",
-    "edition": "base", "rarity": "standard",
-    "stats": { "speed": 56, "power": 67, "jump": 65, "brains": 72 }, "total": 260,
-    "images": { "card": "/images/cards/hs001-ezora.webp" }, "featured": false
+{
+  "schemaVersion": 1,
+  "collection": {
+    "name": "Horse Stars",
+    "edition": "Base Collection",
+    "totalHorses": 102
   },
-  {
-    "id": "HS009", "number": 9, "name": "Byzantis", "slug": "byzantis", "breed": "Arabian",
-    "edition": "base", "rarity": "elite",
-    "stats": { "speed": 85, "power": 88, "jump": 92, "brains": 93 }, "total": 358,
-    "title": "The flawless navigator", "tagline": "He navigates by the stars and never gets lost.",
-    "images": { "card": "/images/specials/Elite.png" }, "featured": true, "battleDemo": true
-  },
-  {
-    "id": "HS011", "number": 11, "name": "Flits", "slug": "flits", "breed": "Friesian",
-    "edition": "base", "rarity": "standard",
-    "stats": { "speed": 72, "power": 84, "jump": 80, "brains": 87 }, "total": 323,
-    "images": { "card": "/images/cards/hs011-flits.webp" }, "featured": false
-  },
-  {
-    "id": "HS051", "number": 51, "name": "Exon", "slug": "exon", "breed": "Mustang",
-    "edition": "base", "rarity": "legend",
-    "stats": { "speed": 97, "power": 99, "jump": 98, "brains": 97 }, "total": 391,
-    "title": "Rock Solid", "tagline": "The king of the Rocky Mountains and the strongest horse of all.",
-    "images": { "card": "/images/specials/Legend.png" }, "featured": true
-  },
-  {
-    "id": "HS052", "number": 52, "name": "Ash", "slug": "ash", "breed": "Mustang",
-    "edition": "base", "rarity": "standard",
-    "stats": { "speed": 87, "power": 78, "jump": 80, "brains": 79 }, "total": 324,
-    "images": { "card": "/images/cards/hs052-ash.webp" }, "featured": false
-  },
-  {
-    "id": "HS085", "number": 85, "name": "Queen", "slug": "queen", "breed": "Thoroughbred",
-    "edition": "base", "rarity": "epic",
-    "stats": { "speed": 97, "power": 95, "jump": 94, "brains": 92 }, "total": 378,
-    "title": "The queen of speed", "tagline": "Loves to compete, never lost a race.",
-    "images": { "card": "/images/specials/Epic.png" }, "featured": true, "battleDemo": true
-  }
-]
+  "horses": [
+    {
+      "id": "HS001",
+      "number": 1,
+      "name": "Ezora",
+      "slug": "ezora",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 56,
+        "power": 67,
+        "jump": 65,
+        "brains": 72
+      },
+      "total": 260,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs001-ezora.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS002",
+      "number": 2,
+      "name": "Aramea",
+      "slug": "aramea",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 60,
+        "power": 62,
+        "jump": 55,
+        "brains": 74
+      },
+      "total": 251,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs002-aramea.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS003",
+      "number": 3,
+      "name": "Baiza",
+      "slug": "baiza",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 58,
+        "power": 59,
+        "jump": 61,
+        "brains": 81
+      },
+      "total": 259,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs003-baiza.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS004",
+      "number": 4,
+      "name": "Arabas",
+      "slug": "arabas",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 62,
+        "power": 64,
+        "jump": 57,
+        "brains": 77
+      },
+      "total": 260,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs004-arabas.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS005",
+      "number": 5,
+      "name": "Aladin",
+      "slug": "aladin",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 55,
+        "power": 45,
+        "jump": 52,
+        "brains": 85
+      },
+      "total": 237,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs005-aladin.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS006",
+      "number": 6,
+      "name": "Fatima",
+      "slug": "fatima",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 68,
+        "power": 57,
+        "jump": 61,
+        "brains": 80
+      },
+      "total": 266,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs006-fatima.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS007",
+      "number": 7,
+      "name": "Laila",
+      "slug": "laila",
+      "breed": "Arabian",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 29,
+        "power": 24,
+        "jump": 22,
+        "brains": 56
+      },
+      "total": 131,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs007-laila.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS008",
+      "number": 8,
+      "name": "Shazess",
+      "slug": "shazess",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 81,
+        "power": 64,
+        "jump": 72,
+        "brains": 87
+      },
+      "total": 304,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs008-shazess.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS009",
+      "number": 9,
+      "name": "Byzantis",
+      "slug": "byzantis",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "elite",
+      "stats": {
+        "speed": 85,
+        "power": 88,
+        "jump": 92,
+        "brains": 93
+      },
+      "total": 358,
+      "story": {
+        "title": "The Flawless Navigator",
+        "hook": "He navigates by the stars and never gets lost",
+        "raw": "The Flawless Navigator. He navigates by the stars and never gets lost"
+      },
+      "images": {
+        "card": "/images/cards/hs009-byzantis.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS010",
+      "number": 10,
+      "name": "Turek",
+      "slug": "turek",
+      "breed": "Arabian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 70,
+        "power": 74,
+        "jump": 75,
+        "brains": 67
+      },
+      "total": 286,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs010-turek.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS011",
+      "number": 11,
+      "name": "Flits",
+      "slug": "flits",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 72,
+        "power": 84,
+        "jump": 80,
+        "brains": 87
+      },
+      "total": 323,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs011-flits.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS012",
+      "number": 12,
+      "name": "Jip",
+      "slug": "jip",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 75,
+        "power": 83,
+        "jump": 76,
+        "brains": 78
+      },
+      "total": 312,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs012-jip.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS013",
+      "number": 13,
+      "name": "Emma",
+      "slug": "emma",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 70,
+        "power": 74,
+        "jump": 68,
+        "brains": 80
+      },
+      "total": 292,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs013-emma.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS014",
+      "number": 14,
+      "name": "Laura",
+      "slug": "laura",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 67,
+        "power": 70,
+        "jump": 66,
+        "brains": 82
+      },
+      "total": 285,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs014-laura.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS015",
+      "number": 15,
+      "name": "Ozzy",
+      "slug": "ozzy",
+      "breed": "Friesian",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 34,
+        "power": 40,
+        "jump": 29,
+        "brains": 59
+      },
+      "total": 162,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs015-ozzy.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS016",
+      "number": 16,
+      "name": "Kayra",
+      "slug": "kayra",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "epic",
+      "stats": {
+        "speed": 95,
+        "power": 96,
+        "jump": 92,
+        "brains": 91
+      },
+      "total": 374,
+      "story": {
+        "title": "The Power Princess",
+        "hook": "So strong she can pull trees out of the ground.",
+        "raw": "The Power Princess. So strong she can pull trees out of the ground."
+      },
+      "images": {
+        "card": "/images/cards/hs016-kayra.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS017",
+      "number": 17,
+      "name": "Wind",
+      "slug": "wind",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 71,
+        "power": 75,
+        "jump": 70,
+        "brains": 74
+      },
+      "total": 290,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs017-wind.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS018",
+      "number": 18,
+      "name": "Zelda",
+      "slug": "zelda",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 80,
+        "power": 82,
+        "jump": 76,
+        "brains": 79
+      },
+      "total": 317,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs018-zelda.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS019",
+      "number": 19,
+      "name": "Wimm",
+      "slug": "wimm",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 68,
+        "power": 77,
+        "jump": 71,
+        "brains": 81
+      },
+      "total": 297,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs019-wimm.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS020",
+      "number": 20,
+      "name": "Max",
+      "slug": "max",
+      "breed": "Friesian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 73,
+        "power": 79,
+        "jump": 75,
+        "brains": 88
+      },
+      "total": 315,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs020-max.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS021",
+      "number": 21,
+      "name": "Billy",
+      "slug": "billy",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 81,
+        "power": 67,
+        "jump": 92,
+        "brains": 75
+      },
+      "total": 315,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs021-billy.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS022",
+      "number": 22,
+      "name": "Donald",
+      "slug": "donald",
+      "breed": "American Quarter",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 24,
+        "power": 18,
+        "jump": 36,
+        "brains": 50
+      },
+      "total": 128,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs022-donald.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS023",
+      "number": 23,
+      "name": "Jane",
+      "slug": "jane",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 64,
+        "power": 71,
+        "jump": 73,
+        "brains": 68
+      },
+      "total": 276,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs023-jane.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS024",
+      "number": 24,
+      "name": "Jazz",
+      "slug": "jazz",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 77,
+        "power": 75,
+        "jump": 75,
+        "brains": 82
+      },
+      "total": 309,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs024-jazz.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS025",
+      "number": 25,
+      "name": "Jack",
+      "slug": "jack",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 84,
+        "power": 79,
+        "jump": 80,
+        "brains": 77
+      },
+      "total": 320,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs025-jack.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS026",
+      "number": 26,
+      "name": "Daisy",
+      "slug": "daisy",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "elite",
+      "stats": {
+        "speed": 89,
+        "power": 85,
+        "jump": 88,
+        "brains": 90
+      },
+      "total": 352,
+      "story": {
+        "title": "The Happy Dancer",
+        "hook": "She likes to dance in the rain.",
+        "raw": "The Happy Dancer. She likes to dance in the rain."
+      },
+      "images": {
+        "card": "/images/cards/hs026-daisy.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS027",
+      "number": 27,
+      "name": "Love",
+      "slug": "love",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 66,
+        "power": 62,
+        "jump": 69,
+        "brains": 84
+      },
+      "total": 281,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs027-love.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS028",
+      "number": 28,
+      "name": "Taylor",
+      "slug": "taylor",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 68,
+        "power": 70,
+        "jump": 71,
+        "brains": 72
+      },
+      "total": 281,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs028-taylor.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS029",
+      "number": 29,
+      "name": "Dolly",
+      "slug": "dolly",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 70,
+        "power": 62,
+        "jump": 65,
+        "brains": 76
+      },
+      "total": 273,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs029-dolly.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS030",
+      "number": 30,
+      "name": "Charlot",
+      "slug": "charlot",
+      "breed": "American Quarter",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 75,
+        "power": 76,
+        "jump": 80,
+        "brains": 81
+      },
+      "total": 312,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs030-charlot.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS031",
+      "number": 31,
+      "name": "Eva",
+      "slug": "eva",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 76,
+        "power": 58,
+        "jump": 82,
+        "brains": 81
+      },
+      "total": 297,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs031-eva.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS032",
+      "number": 32,
+      "name": "Hansi",
+      "slug": "hansi",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 80,
+        "power": 72,
+        "jump": 76,
+        "brains": 81
+      },
+      "total": 309,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs032-hansi.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS033",
+      "number": 33,
+      "name": "Ursula",
+      "slug": "ursula",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 74,
+        "power": 78,
+        "jump": 81,
+        "brains": 74
+      },
+      "total": 307,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs033-ursula.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS034",
+      "number": 34,
+      "name": "Nina",
+      "slug": "nina",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 69,
+        "power": 70,
+        "jump": 80,
+        "brains": 81
+      },
+      "total": 300,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs034-nina.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS035",
+      "number": 35,
+      "name": "Jan",
+      "slug": "jan",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 78,
+        "power": 74,
+        "jump": 78,
+        "brains": 77
+      },
+      "total": 307,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs035-jan.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS036",
+      "number": 36,
+      "name": "Isabella",
+      "slug": "isabella",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 84,
+        "power": 81,
+        "jump": 79,
+        "brains": 83
+      },
+      "total": 327,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs036-isabella.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS037",
+      "number": 37,
+      "name": "Sisi",
+      "slug": "sisi",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 67,
+        "power": 70,
+        "jump": 76,
+        "brains": 80
+      },
+      "total": 293,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs037-sisi.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS038",
+      "number": 38,
+      "name": "Mia",
+      "slug": "mia",
+      "breed": "Hanoverian",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 15,
+        "power": 17,
+        "jump": 20,
+        "brains": 37
+      },
+      "total": 89,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs038-mia.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS039",
+      "number": 39,
+      "name": "Helga",
+      "slug": "helga",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "elite",
+      "stats": {
+        "speed": 89,
+        "power": 88,
+        "jump": 92,
+        "brains": 93
+      },
+      "total": 362,
+      "story": {
+        "title": "The Challenger",
+        "hook": "She is training to win the Olympic show jumping.",
+        "raw": "The Challenger. She is training to win the Olympic show jumping."
+      },
+      "images": {
+        "card": "/images/cards/hs039-helga.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS040",
+      "number": 40,
+      "name": "Bernd",
+      "slug": "bernd",
+      "breed": "Hanoverian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 84,
+        "power": 83,
+        "jump": 80,
+        "brains": 89
+      },
+      "total": 336,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs040-bernd.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS041",
+      "number": 41,
+      "name": "Vigo",
+      "slug": "vigo",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 85,
+        "power": 85,
+        "jump": 84,
+        "brains": 65
+      },
+      "total": 319,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs041-vigo.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS042",
+      "number": 42,
+      "name": "Zeta",
+      "slug": "zeta",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 80,
+        "power": 75,
+        "jump": 76,
+        "brains": 84
+      },
+      "total": 315,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs042-zeta.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS043",
+      "number": 43,
+      "name": "Miguel",
+      "slug": "miguel",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 75,
+        "power": 74,
+        "jump": 70,
+        "brains": 68
+      },
+      "total": 287,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs043-miguel.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS044",
+      "number": 44,
+      "name": "Amador",
+      "slug": "amador",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 71,
+        "power": 65,
+        "jump": 64,
+        "brains": 75
+      },
+      "total": 275,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs044-amador.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS045",
+      "number": 45,
+      "name": "Diego",
+      "slug": "diego",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 86,
+        "power": 80,
+        "jump": 84,
+        "brains": 71
+      },
+      "total": 321,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs045-diego.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS046",
+      "number": 46,
+      "name": "Boaz",
+      "slug": "boaz",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "epic",
+      "stats": {
+        "speed": 95,
+        "power": 97,
+        "jump": 96,
+        "brains": 94
+      },
+      "total": 382,
+      "story": {
+        "title": "The Solar Stallion",
+        "hook": "The warmer the weather the stronger he gets",
+        "raw": "The Solar Stallion. The warmer the weather the stronger he gets"
+      },
+      "images": {
+        "card": "/images/cards/hs046-boaz.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS047",
+      "number": 47,
+      "name": "Amira",
+      "slug": "amira",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 74,
+        "power": 80,
+        "jump": 72,
+        "brains": 68
+      },
+      "total": 294,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs047-amira.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS048",
+      "number": 48,
+      "name": "Angela",
+      "slug": "angela",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 87,
+        "power": 86,
+        "jump": 90,
+        "brains": 73
+      },
+      "total": 336,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs048-angela.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS049",
+      "number": 49,
+      "name": "Luna",
+      "slug": "luna",
+      "breed": "Andalusian",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 20,
+        "power": 22,
+        "jump": 19,
+        "brains": 33
+      },
+      "total": 94,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs049-luna.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS050",
+      "number": 50,
+      "name": "Meteor",
+      "slug": "meteor",
+      "breed": "Andalusian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 84,
+        "power": 90,
+        "jump": 75,
+        "brains": 80
+      },
+      "total": 329,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs050-meteor.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS051",
+      "number": 51,
+      "name": "Exon",
+      "slug": "exon",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "legend",
+      "stats": {
+        "speed": 97,
+        "power": 99,
+        "jump": 98,
+        "brains": 97
+      },
+      "total": 391,
+      "story": {
+        "title": "Rock Solid",
+        "hook": "The king of the Rocky Mountains and the strongest horse of all.",
+        "raw": "Rock Solid. The king of the Rocky Mountains and the strongest horse of all."
+      },
+      "images": {
+        "card": "/images/cards/hs051-exon.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS052",
+      "number": 52,
+      "name": "Ash",
+      "slug": "ash",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 87,
+        "power": 78,
+        "jump": 80,
+        "brains": 79
+      },
+      "total": 324,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs052-ash.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS053",
+      "number": 53,
+      "name": "River",
+      "slug": "river",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 88,
+        "power": 90,
+        "jump": 74,
+        "brains": 73
+      },
+      "total": 325,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs053-river.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS054",
+      "number": 54,
+      "name": "Amber",
+      "slug": "amber",
+      "breed": "Mustang",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 25,
+        "power": 26,
+        "jump": 21,
+        "brains": 39
+      },
+      "total": 111,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs054-amber.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS055",
+      "number": 55,
+      "name": "Blaze",
+      "slug": "blaze",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 87,
+        "power": 89,
+        "jump": 77,
+        "brains": 81
+      },
+      "total": 334,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs055-blaze.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS056",
+      "number": 56,
+      "name": "Champ",
+      "slug": "champ",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "elite",
+      "stats": {
+        "speed": 87,
+        "power": 89,
+        "jump": 94,
+        "brains": 87
+      },
+      "total": 357,
+      "story": {
+        "title": "The Jumper",
+        "hook": "Known for his long jumps over rivers.",
+        "raw": "The Jumper. Known for his long jumps over rivers."
+      },
+      "images": {
+        "card": "/images/cards/hs056-champ.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS057",
+      "number": 57,
+      "name": "Sunny",
+      "slug": "sunny",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 86,
+        "power": 72,
+        "jump": 84,
+        "brains": 71
+      },
+      "total": 313,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs057-sunny.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS058",
+      "number": 58,
+      "name": "Zoe",
+      "slug": "zoe",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 71,
+        "power": 66,
+        "jump": 74,
+        "brains": 82
+      },
+      "total": 293,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs058-zoe.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS059",
+      "number": 59,
+      "name": "Runner",
+      "slug": "runner",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 91,
+        "power": 82,
+        "jump": 67,
+        "brains": 79
+      },
+      "total": 319,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs059-runner.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS060",
+      "number": 60,
+      "name": "DJ",
+      "slug": "dj",
+      "breed": "Mustang",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 80,
+        "power": 77,
+        "jump": 71,
+        "brains": 74
+      },
+      "total": 302,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs060-dj.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS061",
+      "number": 61,
+      "name": "Dakota",
+      "slug": "dakota",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 65,
+        "power": 70,
+        "jump": 81,
+        "brains": 74
+      },
+      "total": 290,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs061-dakota.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS062",
+      "number": 62,
+      "name": "Apache",
+      "slug": "apache",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 64,
+        "power": 68,
+        "jump": 75,
+        "brains": 71
+      },
+      "total": 278,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs062-apache.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS063",
+      "number": 63,
+      "name": "Pipi",
+      "slug": "pipi",
+      "breed": "Appaloosa",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 24,
+        "power": 26,
+        "jump": 14,
+        "brains": 50
+      },
+      "total": 114,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs063-pipi.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS064",
+      "number": 64,
+      "name": "Isamar",
+      "slug": "isamar",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 63,
+        "power": 65,
+        "jump": 62,
+        "brains": 80
+      },
+      "total": 270,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs064-isamar.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS065",
+      "number": 65,
+      "name": "Rio",
+      "slug": "rio",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 83,
+        "power": 81,
+        "jump": 87,
+        "brains": 76
+      },
+      "total": 327,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs065-rio.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS066",
+      "number": 66,
+      "name": "El Nero",
+      "slug": "el-nero",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "elite",
+      "stats": {
+        "speed": 88,
+        "power": 85,
+        "jump": 90,
+        "brains": 91
+      },
+      "total": 354,
+      "story": {
+        "title": "The Shepherd",
+        "hook": "He can forecast the weather and guide his herd safely.",
+        "raw": "The Shepherd. He can forecast the weather and guide his herd safely."
+      },
+      "images": {
+        "card": "/images/cards/hs066-el-nero.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS067",
+      "number": 67,
+      "name": "Cava",
+      "slug": "cava",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 74,
+        "power": 75,
+        "jump": 71,
+        "brains": 82
+      },
+      "total": 302,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs067-cava.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS068",
+      "number": 68,
+      "name": "Rebenga",
+      "slug": "rebenga",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 90,
+        "power": 84,
+        "jump": 62,
+        "brains": 67
+      },
+      "total": 303,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs068-rebenga.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS069",
+      "number": 69,
+      "name": "Zeta",
+      "slug": "zeta-69",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 71,
+        "power": 72,
+        "jump": 70,
+        "brains": 85
+      },
+      "total": 298,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs069-zeta-69.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS070",
+      "number": 70,
+      "name": "Spotty",
+      "slug": "spotty",
+      "breed": "Appaloosa",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 65,
+        "power": 69,
+        "jump": 75,
+        "brains": 75
+      },
+      "total": 284,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs070-spotty.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS071",
+      "number": 71,
+      "name": "Dan",
+      "slug": "dan",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 80,
+        "power": 87,
+        "jump": 63,
+        "brains": 72
+      },
+      "total": 302,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs071-dan.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS072",
+      "number": 72,
+      "name": "Eliza",
+      "slug": "eliza",
+      "breed": "Czech Warmblood",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 16,
+        "power": 18,
+        "jump": 20,
+        "brains": 36
+      },
+      "total": 90,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs072-eliza.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS073",
+      "number": 73,
+      "name": "Mila",
+      "slug": "mila",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "elite",
+      "stats": {
+        "speed": 94,
+        "power": 88,
+        "jump": 92,
+        "brains": 92
+      },
+      "total": 366,
+      "story": {
+        "title": "The Forest Lady",
+        "hook": "The fastest horse in the forest.",
+        "raw": "The Forest Lady. The fastest horse in the forest."
+      },
+      "images": {
+        "card": "/images/cards/hs073-mila.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS074",
+      "number": 74,
+      "name": "Bro",
+      "slug": "bro",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 64,
+        "power": 71,
+        "jump": 69,
+        "brains": 84
+      },
+      "total": 288,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs074-bro.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS075",
+      "number": 75,
+      "name": "Aya",
+      "slug": "aya",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 73,
+        "power": 68,
+        "jump": 74,
+        "brains": 81
+      },
+      "total": 296,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs075-aya.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS076",
+      "number": 76,
+      "name": "Kamo",
+      "slug": "kamo",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 77,
+        "power": 74,
+        "jump": 70,
+        "brains": 86
+      },
+      "total": 307,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs076-kamo.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS077",
+      "number": 77,
+      "name": "Lucia",
+      "slug": "lucia",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 85,
+        "power": 80,
+        "jump": 75,
+        "brains": 70
+      },
+      "total": 310,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs077-lucia.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS078",
+      "number": 78,
+      "name": "Kveta",
+      "slug": "kveta",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 71,
+        "power": 73,
+        "jump": 64,
+        "brains": 82
+      },
+      "total": 290,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs078-kveta.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS079",
+      "number": 79,
+      "name": "Mister",
+      "slug": "mister",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 88,
+        "power": 91,
+        "jump": 75,
+        "brains": 89
+      },
+      "total": 343,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs079-mister.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS080",
+      "number": 80,
+      "name": "Yulia",
+      "slug": "yulia",
+      "breed": "Czech Warmblood",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 69,
+        "power": 73,
+        "jump": 66,
+        "brains": 78
+      },
+      "total": 286,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs080-yulia.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS081",
+      "number": 81,
+      "name": "Oliver",
+      "slug": "oliver",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 89,
+        "power": 81,
+        "jump": 87,
+        "brains": 85
+      },
+      "total": 342,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs081-oliver.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS082",
+      "number": 82,
+      "name": "C Girl",
+      "slug": "c-girl",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 70,
+        "power": 73,
+        "jump": 77,
+        "brains": 81
+      },
+      "total": 301,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs082-c-girl.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS083",
+      "number": 83,
+      "name": "Eddy",
+      "slug": "eddy",
+      "breed": "Thoroughbred",
+      "isFoal": true,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 35,
+        "power": 23,
+        "jump": 16,
+        "brains": 44
+      },
+      "total": 118,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs083-eddy.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS084",
+      "number": 84,
+      "name": "Victoria",
+      "slug": "victoria",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 83,
+        "power": 78,
+        "jump": 60,
+        "brains": 81
+      },
+      "total": 302,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs084-victoria.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS085",
+      "number": 85,
+      "name": "Queen",
+      "slug": "queen",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "epic",
+      "stats": {
+        "speed": 97,
+        "power": 95,
+        "jump": 94,
+        "brains": 92
+      },
+      "total": 378,
+      "story": {
+        "title": "The Queen of Speed",
+        "hook": "Loves to compete, never lost a race.",
+        "raw": "The Queen of Speed. Loves to compete, never lost a race."
+      },
+      "images": {
+        "card": "/images/cards/hs085-queen.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS086",
+      "number": 86,
+      "name": "James",
+      "slug": "james",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 78,
+        "power": 66,
+        "jump": 65,
+        "brains": 70
+      },
+      "total": 279,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs086-james.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS087",
+      "number": 87,
+      "name": "London",
+      "slug": "london",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 85,
+        "power": 80,
+        "jump": 79,
+        "brains": 76
+      },
+      "total": 320,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs087-london.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS088",
+      "number": 88,
+      "name": "Mary",
+      "slug": "mary",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 80,
+        "power": 74,
+        "jump": 82,
+        "brains": 71
+      },
+      "total": 307,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs088-mary.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS089",
+      "number": 89,
+      "name": "Rooney",
+      "slug": "rooney",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 90,
+        "power": 87,
+        "jump": 80,
+        "brains": 79
+      },
+      "total": 336,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs089-rooney.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS090",
+      "number": 90,
+      "name": "Swift",
+      "slug": "swift",
+      "breed": "Thoroughbred",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 91,
+        "power": 77,
+        "jump": 85,
+        "brains": 80
+      },
+      "total": 333,
+      "story": null,
+      "images": {
+        "card": "/images/cards/hs090-swift.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS091",
+      "number": 91,
+      "name": "Savannah",
+      "slug": "savannah",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 79,
+        "power": 74,
+        "jump": 86,
+        "brains": 97
+      },
+      "total": 336,
+      "story": {
+        "title": "The Wise One",
+        "hook": "Super intelligent horse likes makes friends with everybody.",
+        "raw": "The Wise One. Super intelligent horse likes makes friends with everybody."
+      },
+      "images": {
+        "card": "/images/cards/hs091-savannah.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS092",
+      "number": 92,
+      "name": "Oceana",
+      "slug": "oceana",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 90,
+        "power": 86,
+        "jump": 85,
+        "brains": 87
+      },
+      "total": 348,
+      "story": {
+        "title": "The Wave Runner",
+        "hook": "Runs on the beach and disappears in the sea.",
+        "raw": "The Wave Runner. Runs on the beach and disappears in the sea."
+      },
+      "images": {
+        "card": "/images/cards/hs092-oceana.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS093",
+      "number": 93,
+      "name": "Pantera",
+      "slug": "pantera",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "elite",
+      "stats": {
+        "speed": 95,
+        "power": 85,
+        "jump": 91,
+        "brains": 91
+      },
+      "total": 362,
+      "story": {
+        "title": "The Shadow Runner",
+        "hook": "Fast and agile horse with glowing panther eyes.",
+        "raw": "The Shadow Runner. Fast and agile horse with glowing panther eyes."
+      },
+      "images": {
+        "card": "/images/cards/hs093-pantera.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS094",
+      "number": 94,
+      "name": "Goldy",
+      "slug": "goldy",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 84,
+        "power": 77,
+        "jump": 93,
+        "brains": 81
+      },
+      "total": 335,
+      "story": {
+        "title": "The Golden Hooves",
+        "hook": "Her golden hooves protect her from any danger.",
+        "raw": "The Golden Hooves. Her golden hooves protect her from any danger."
+      },
+      "images": {
+        "card": "/images/cards/hs094-goldy.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS095",
+      "number": 95,
+      "name": "Sparkle",
+      "slug": "sparkle",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 82,
+        "power": 79,
+        "jump": 85,
+        "brains": 92
+      },
+      "total": 338,
+      "story": {
+        "title": "The Star Trail",
+        "hook": "She leaves a trail of sparkles and stars whenever she runs.",
+        "raw": "The Star Trail. She leaves a trail of sparkles and stars whenever she runs."
+      },
+      "images": {
+        "card": "/images/cards/hs095-sparkle.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS096",
+      "number": 96,
+      "name": "Arboris",
+      "slug": "arboris",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 85,
+        "power": 98,
+        "jump": 79,
+        "brains": 84
+      },
+      "total": 346,
+      "story": {
+        "title": "Guardian of the Forest",
+        "hook": "He lost his parents and grew up with the trees.",
+        "raw": "Guardian of the Forest. He lost his parents and grew up with the trees."
+      },
+      "images": {
+        "card": "/images/cards/hs096-arboris.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS097",
+      "number": 97,
+      "name": "Lev",
+      "slug": "lev",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "elite",
+      "stats": {
+        "speed": 90,
+        "power": 96,
+        "jump": 89,
+        "brains": 85
+      },
+      "total": 360,
+      "story": {
+        "title": "The Fearless King",
+        "hook": "Extremely powerful and brave fighter.",
+        "raw": "The Fearless King. Extremely powerful and brave fighter."
+      },
+      "images": {
+        "card": "/images/cards/hs097-lev.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS098",
+      "number": 98,
+      "name": "Mirage",
+      "slug": "mirage",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 74,
+        "power": 80,
+        "jump": 76,
+        "brains": 95
+      },
+      "total": 325,
+      "story": {
+        "title": "The Illusionist",
+        "hook": "She can create objects and worlds with her mind.",
+        "raw": "The Illusionist. She can create objects and worlds with her mind."
+      },
+      "images": {
+        "card": "/images/cards/hs098-mirage.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS099",
+      "number": 99,
+      "name": "Zee",
+      "slug": "zee",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 74,
+        "power": 84,
+        "jump": 83,
+        "brains": 93
+      },
+      "total": 334,
+      "story": {
+        "title": "The mind bender",
+        "hook": "Don’t look too long, her stripes can hypnotize you.",
+        "raw": "The mind bender. Don’t look too long, her stripes can hypnotize you."
+      },
+      "images": {
+        "card": "/images/cards/hs099-zee.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS100",
+      "number": 100,
+      "name": "Epix",
+      "slug": "epix",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "epic",
+      "stats": {
+        "speed": 95,
+        "power": 94,
+        "jump": 92,
+        "brains": 93
+      },
+      "total": 374,
+      "story": {
+        "title": "King of the Mountains",
+        "hook": "An ancient horse who lives high in the mountains, rarely seen by climbers.",
+        "raw": "King of the Mountains. An ancient horse who lives high in the mountains, rarely seen by climbers."
+      },
+      "images": {
+        "card": "/images/cards/hs100-epix.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS101",
+      "number": 101,
+      "name": "Lumina",
+      "slug": "lumina",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "normal",
+      "stats": {
+        "speed": 87,
+        "power": 69,
+        "jump": 72,
+        "brains": 95
+      },
+      "total": 323,
+      "story": {
+        "title": "Bringer of Light",
+        "hook": "Brings light with her even in the darkest nights.",
+        "raw": "Bringer of Light. Brings light with her even in the darkest nights."
+      },
+      "images": {
+        "card": "/images/cards/hs101-lumina.webp",
+        "hero": null
+      }
+    },
+    {
+      "id": "HS102",
+      "number": 102,
+      "name": "Fenix",
+      "slug": "fenix",
+      "breed": "Mysterian",
+      "isFoal": false,
+      "edition": "base",
+      "rarity": "legend",
+      "stats": {
+        "speed": 98,
+        "power": 98,
+        "jump": 97,
+        "brains": 99
+      },
+      "total": 392,
+      "story": {
+        "title": "The Returning King",
+        "hook": "Nobody has seen him for decades, but he will come back when the world needs him.",
+        "raw": "The Returning King. Nobody has seen him for decades, but he will come back when the world needs him."
+      },
+      "images": {
+        "card": "/images/cards/hs102-fenix.webp",
+        "hero": null
+      }
+    }
+  ]
+}

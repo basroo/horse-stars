@@ -8,17 +8,18 @@ interface Props { horse: Horse; copy: Copy }
 const { horse, copy: t } = Astro.props;
 const rarity = t.rarities[horse.rarity as keyof typeof t.rarities] ?? horse.rarity;
 const breed = t.breeds[horse.breed.toLowerCase().replaceAll(" ", "") as keyof typeof t.breeds] ?? horse.breed;
+const image = cardImages[horse.images.card];
 ---
 <article class:list={['horse-card', `rarity-${horse.rarity}`]}>
   <div class="card-topline"><span>{horse.id}</span><span class="rarity-label"><span></span>{rarity}</span></div>
   <button class="card-art" data-card-open={horse.id} aria-label={`${t.collection.view}: ${horse.name}`} aria-haspopup="dialog">
     <span class="card-halo" aria-hidden="true"></span>
-    <Image src={cardImages[horse.images.card] ?? horse.images.card} alt={`${horse.name} — ${breed}, ${rarity}`} width={340} height={480} widths={[240,340,480,680]} sizes="(max-width: 639px) 72vw, (max-width: 1023px) 38vw, 320px" loading="lazy" />
+    {image ? <Image src={image} alt={`${horse.name} — ${breed}, ${rarity}`} width={340} height={480} widths={[240,340,480,680]} sizes="(max-width: 639px) 72vw, (max-width: 1023px) 38vw, 320px" loading="lazy" /> : <div class="horse-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}
     <span class="card-zoom" aria-hidden="true">↗</span>
   </button>
   <div class="card-caption"><div><h3>{horse.name}</h3><p>{breed}</p></div><span class="card-total"><strong>{horse.total}</strong><small>{t.collection.total}</small></span></div>
 </article>
 <dialog id={`preview-${horse.id}`} class="card-dialog" aria-label={`${horse.name} — ${rarity}`}>
   <button class="dialog-close" data-card-close aria-label={t.collection.close}><Icon name="close" /></button>
-  <Image src={cardImages[horse.images.card] ?? horse.images.card} alt={`${horse.name} — ${breed}, ${rarity}`} width={564} height={799} widths={[480,680]} sizes="(max-width: 639px) 85vw, 460px" loading="lazy" />
+  {image ? <Image src={image} alt={`${horse.name} — ${breed}, ${rarity}`} width={564} height={799} widths={[480,680]} sizes="(max-width: 639px) 85vw, 460px" loading="lazy" /> : <div class="horse-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}
 </dialog>

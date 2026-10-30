@@ -14,19 +14,18 @@ interface Props { horse: Horse; locale?: Locale }
 const { horse, locale = 'en' } = Astro.props;
 const t = getCopy(locale);
 const breed = breedLabel(horse.breed, t);
-const rarity = t.rarities[horse.rarity];
+const rarity = horse.rarity === 'normal' ? 'Standard' : t.rarities[horse.rarity];
 const editionHorses = orderedHorses.filter(item => item.edition === horse.edition);
 const index = editionHorses.findIndex(item => item.id === horse.id);
 const previous = editionHorses[index - 1];
 const next = editionHorses[index + 1];
 const related = orderedHorses.filter(item => item.breed === horse.breed && item.id !== horse.id);
 const image = cardImages[horse.images.card];
-if (!image) throw new Error(`Missing local card artwork: ${horse.id}`);
-const shareImage = await getImage({ src: image, width: 700, format: 'webp' });
+const shareImage = image ? await getImage({ src: image, width: 700, format: 'webp' }) : undefined;
 const alt = t.dex.cardAlt.replace('{name}', horse.name).replace('{rarity}', rarity);
 const description = t.dex.metaDescription.replace('{name}',horse.name).replace('{breed}',breed).replace('{id}',horse.id).replace('{rarity}',rarity);
 ---
-<SiteLayout locale={locale} title={`${horse.name} · ${horse.id} — HORSE STARS HorseDex`} description={description} image={shareImage.src} imageAlt={alt}>
+<SiteLayout locale={locale} title={`${horse.name} · ${horse.id} — HORSE STARS HorseDex`} description={description} image={shareImage?.src} imageAlt={alt}>
   <div class={`horse-detail dex-rarity-${horse.rarity}`}>
     <div class="container detail-topline"><a class="dex-back" href={localizedPath('/horses/',locale)}><Icon class="rotate-180" />{t.dex.back}</a><span>{editionLabel(horse.edition,t)} / {rarity}</span></div>
     <nav class="container horse-sequence" aria-label={t.dex.sampleNav}>
@@ -39,7 +38,7 @@ const description = t.dex.metaDescription.replace('{name}',horse.name).replace('
         {horse.images.hero && cardImages[horse.images.hero] && <Image class="detail-art-background" src={cardImages[horse.images.hero]} alt="" width={900} loading="lazy" />}
         <div class="detail-orbit" aria-hidden="true"></div>
         <span class="detail-art-label">HORSE STARS / {horse.id}</span>
-        <Image class="detail-card-image" src={image} alt={alt} width={460} widths={[320,460,640,920]} sizes="(max-width: 639px) 75vw, (max-width: 1023px) 40vw, 440px" loading="eager" fetchpriority="high" />
+        {image ? <Image class="detail-card-image" src={image} alt={alt} width={460} widths={[320,460,640,920]} sizes="(max-width: 639px) 75vw, (max-width: 1023px) 40vw, 440px" loading="eager" fetchpriority="high" /> : <div class="horse-placeholder detail-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}
         <span class="detail-art-rarity"><Icon name="star" />{rarity}</span>
       </div>
       <div class="detail-copy">
@@ -49,8 +48,7 @@ const description = t.dex.metaDescription.replace('{name}',horse.name).replace('
         <div class="detail-total"><div><Icon name="star" /><span>{t.dex.total}</span></div><strong>{horse.total}</strong></div>
         <p class="detail-stats-heading">{t.dex.stats}</p>
         <dl class="detail-stats">{statKeys.map(stat => <div class={`detail-stat stat-${stat}`}><dt><StatIcon stat={stat} />{t.collection[stat]}</dt><dd>{horse.stats[stat]}</dd><div class="detail-stat-track" aria-hidden="true"><span style={`width:${Math.min(100,horse.stats[stat])}%`}></span></div></div>)}</dl>
-        {horse.bonus && <p class="detail-bonus">{t.dex.bonus}: +{horse.bonus.amount} {t.collection[horse.bonus.stat]}</p>}
-        {(horse.title || horse.tagline) && <aside class="horse-story" aria-label={t.dex.story}><Icon name="star" /><div>{horse.title && <h2>{horse.title}</h2>}{horse.tagline && <p>{horse.tagline}</p>}</div></aside>}
+        {horse.story && <aside class="horse-story" aria-label={t.dex.story}><Icon name="star" /><div><h2>{horse.story.title}</h2><p>{horse.story.hook}</p></div></aside>}
       </div>
     </section>
     <section class="related-section" aria-labelledby="related-title"><div class="container related-heading"><div><p class="eyebrow">{t.dex.relatedLabel}</p><h2 id="related-title">{t.dex.moreBreed.replace('{breed}',breed.toUpperCase())}</h2></div><a href={localizedPath(`/horses/?breed=${encodeURIComponent(horse.breed)}`,locale)}>{t.dex.browseAll}<Icon /></a></div>

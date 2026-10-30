@@ -1,6 +1,11 @@
 export const statKeys = ['speed', 'power', 'jump', 'brains'] as const;
 export type Stat = typeof statKeys[number];
-export type Rarity = 'standard' | 'elite' | 'epic' | 'legend';
+export type Rarity = 'normal' | 'elite' | 'epic' | 'legend';
+export interface HorseStory {
+  title: string;
+  hook: string;
+  raw: string;
+}
 export interface Horse {
   id: string;
   number: number;
@@ -9,12 +14,9 @@ export interface Horse {
   breed: string;
   edition: string;
   rarity: Rarity;
+  isFoal: boolean;
   stats: Record<Stat, number>;
   total: number;
-  title?: string;
-  tagline?: string;
-  images: { card: string; hero?: string };
-  featured?: boolean;
-  battleDemo?: boolean;
-  bonus?: { stat: Stat; amount: number };
+  story: HorseStory | null;
+  images: { card: string; hero?: string | null };
 }

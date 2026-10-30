@@ -20,7 +20,7 @@ const winner = contenders[0].stats.speed > contenders[1].stats.speed ? contender
         <p class="eyebrow">{t.play.demo}</p>
         <div class="battle-cards">
           {contenders.map(horse => <div class:list={['battle-contender', { 'is-winner': horse.id === winner.id }]} data-contender data-name={horse.name} data-stats={JSON.stringify(Object.fromEntries(stats.map(stat => [stat, stat === "total" ? horse.total : horse.stats[stat]])))}>
-            <Image src={cardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[horse.rarity as keyof typeof t.rarities]}`} widths={[200,320,480]} sizes="(max-width: 639px) 35vw, 220px" width={220} loading="lazy" />
+            {cardImages[horse.images.card] ? <Image src={cardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[horse.rarity as keyof typeof t.rarities]}`} widths={[200,320,480]} sizes="(max-width: 639px) 35vw, 220px" width={220} loading="lazy" /> : <div class="horse-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}
             <div class="battle-value"><span>{horse.name}</span><strong data-value>{horse.stats.speed}</strong></div>
           </div>)}
           <span class="battle-versus">{t.play.versus}</span>

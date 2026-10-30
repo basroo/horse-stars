@@ -48,6 +48,7 @@
     "brains": "Chytrost"
   },
   "rarities": {
+    "normal": "Standard",
     "elite": "Elite",
     "epic": "Epic",
     "legend": "Legend",
@@ -218,7 +219,7 @@
     "subtitle": "102 KONÍ K OBJEVOVÁNÍ",
     "eyebrow": "Každá hvězda. Každý příběh. Jedna kolekce.",
     "description": "Objev koně, porovnej jejich sílu a najdi svého dalšího oblíbence.",
-    "sample": "První pohled: {count} ověřených koní. Kompletní kolekce 102 koní se připravuje.",
+    "sample": "Kompletní kolekce: {count} ověřených koní.",
     "search": "Hledat koně",
     "placeholder": "Najdi koně podle jména…",
     "breed": "Plemeno",
@@ -234,7 +235,7 @@
     "clear": "Zrušit filtry",
     "emptyTitle": "ZATÍM ŽÁDNÉ HVĚZDY.",
     "emptyText": "Zkus jiné jméno nebo změň filtry. Tvůj další oblíbenec možná čeká hned za rohem.",
-    "nojs": "Zobrazeni jsou všichni ukázkoví koně. Pro hledání, filtrování a řazení povol JavaScript.",
+    "nojs": "Zobrazeni jsou všichni koně. Pro hledání, filtrování a řazení povol JavaScript.",
     "back": "Zpět do HorseDexu",
     "previous": "Předchozí kůň",
     "next": "Další kůň",
@@ -251,7 +252,7 @@
     "metaDescription": "Poznej koně {name}, plemeno {breed}, číslo {id}. Objev kartu rarity {rarity}, vlastnosti a příběh v Horse Stars HorseDexu.",
     "indexMeta": "Prozkoumej Horse Stars HorseDex. Hledej koně, objevuj plemena a rarity a porovnávej Rychlost, Sílu, Skok, Chytrost a Celkem.",
     "bonus": "Bonus",
-    "sampleNav": "Procházíš dostupné ukázkové koně",
+    "sampleNav": "Procházíš kompletní kolekci Horse Stars",
     "first": "První dostupný kůň",
     "last": "Poslední dostupný kůň"
   },
