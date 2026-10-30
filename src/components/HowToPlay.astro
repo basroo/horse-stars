@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { battleHorses } from '../data/collection';
-import { cardImages } from '../data/assets';
+import { homepageCardImages } from '../data/homepage-card-assets';
 import Icon from './Icon.astro';
 import StatIcon from './StatIcon.astro';
 import type { Copy } from '../i18n';
@@ -20,7 +20,7 @@ const winner = contenders[0].stats.speed > contenders[1].stats.speed ? contender
         <p class="eyebrow">{t.play.demo}</p>
         <div class="battle-cards">
           {contenders.map(horse => <div class:list={['battle-contender', { 'is-winner': horse.id === winner.id }]} data-contender data-name={horse.name} data-stats={JSON.stringify(Object.fromEntries(stats.map(stat => [stat, stat === "total" ? horse.total : horse.stats[stat]])))}>
-            {cardImages[horse.images.card] ? <Image src={cardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[horse.rarity as keyof typeof t.rarities]}`} widths={[200,320,480]} sizes="(max-width: 639px) 35vw, 220px" width={220} loading="lazy" /> : <div class="horse-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}
+            {homepageCardImages[horse.images.card] ? <Image src={homepageCardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[horse.rarity as keyof typeof t.rarities]}`} widths={[200,320,480]} sizes="(max-width: 639px) 35vw, 220px" width={220} loading="lazy" /> : <div class="horse-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}
             <div class="battle-value"><span>{horse.name}</span><strong data-value>{horse.stats.speed}</strong></div>
           </div>)}
           <span class="battle-versus">{t.play.versus}</span>

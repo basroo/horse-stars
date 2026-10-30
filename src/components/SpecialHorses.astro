@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { horses } from '../data/collection';
-import { cardImages } from '../data/assets';
+import { homepageCardImages } from '../data/homepage-card-assets';
 import Icon from './Icon.astro';
 import type { Copy } from '../i18n';
 interface Props { copy: Copy }
@@ -18,7 +18,7 @@ const rarities = ['elite', 'epic', 'legend'] as const;
       const horse = horses.find(h => h.rarity === rarity)!;
       return <article class={`special-card special-${rarity}`}>
         <div class="special-card-label"><span>0{index + 1}</span><span>{t.rarities[rarity]}</span><Icon name="star" /></div>
-        <div class="special-card-art"><span class="rarity-orbit" aria-hidden="true"></span>{cardImages[horse.images.card] ? <Image src={cardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[rarity]}`} widths={[240,360,540,680]} sizes="(max-width: 639px) 65vw, 300px" width={300} loading="lazy" /> : <div class="horse-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}</div>
+        <div class="special-card-art"><span class="rarity-orbit" aria-hidden="true"></span>{homepageCardImages[horse.images.card] ? <Image src={homepageCardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[rarity]}`} widths={[240,360,540,680]} sizes="(max-width: 639px) 65vw, 300px" width={300} loading="lazy" /> : <div class="horse-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}</div>
         <p>{t.special.descriptions[rarity]}</p>
       </article>;
     })}

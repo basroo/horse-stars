@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import cover from '../../public/images/products/collectors-book-cover.png';
 import { featuredHorses } from '../data/collection';
-import { cardImages } from '../data/assets';
+import { homepageCardImages } from '../data/homepage-card-assets';
 import Icon from './Icon.astro';
 import type { Copy } from '../i18n';
 interface Props { copy: Copy }
@@ -12,7 +12,7 @@ const { copy: t } = Astro.props;
   <div class="container book-layout">
     <figure class="book-showcase">
       <div class="book-orbit" aria-hidden="true"></div>
-      <div class="book-loose-cards" aria-hidden="true">{featuredHorses.slice(1).map(horse => cardImages[horse.images.card] && <Image src={cardImages[horse.images.card]} alt="" width={180} widths={[180,360]} sizes="150px" loading="lazy" />)}</div>
+      <div class="book-loose-cards" aria-hidden="true">{featuredHorses.slice(1).map(horse => homepageCardImages[horse.images.card] && <Image src={homepageCardImages[horse.images.card]} alt="" width={180} widths={[180,360]} sizes="150px" loading="lazy" />)}</div>
       <div class="book-object"><Image src={cover} alt={t.book.alt} width={400} widths={[300,500,800]} sizes="(max-width: 639px) 64vw, 360px" loading="lazy" /></div>
       <figcaption><Icon name="star" />{t.book.artwork}</figcaption>
     </figure>

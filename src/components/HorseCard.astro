@@ -1,14 +1,14 @@
 ---
 import { Image } from 'astro:assets';
-import { cardImages } from '../data/assets';
+import type { ImageMetadata } from 'astro';
 import type { Horse } from '../data/collection';
 import type { Copy } from '../i18n';
 import Icon from './Icon.astro';
-interface Props { horse: Horse; copy: Copy }
+interface Props { horse: Horse; copy: Copy; image?: ImageMetadata }
 const { horse, copy: t } = Astro.props;
 const rarity = t.rarities[horse.rarity as keyof typeof t.rarities] ?? horse.rarity;
 const breed = t.breeds[horse.breed.toLowerCase().replaceAll(" ", "") as keyof typeof t.breeds] ?? horse.breed;
-const image = cardImages[horse.images.card];
+const image = Astro.props.image;
 ---
 <article class:list={['horse-card', `rarity-${horse.rarity}`]}>
   <div class="card-topline"><span>{horse.id}</span><span class="rarity-label"><span></span>{rarity}</span></div>

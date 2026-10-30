@@ -1,11 +1,14 @@
 ---
-import { featuredHorses } from '../data/collection';
+import { horses } from '../data/collection';
+import { homepageCardImages } from '../data/homepage-card-assets';
 import HorseCard from './HorseCard.astro';
 import Icon from './Icon.astro';
 import type { Copy, Locale } from '../i18n';
 import { localizedPath } from '../i18n/paths';
 interface Props { copy: Copy; locale?: Locale }
 const { copy: t, locale = 'en' } = Astro.props;
+const previewIds = ['HS001', 'HS009', 'HS011', 'HS016', 'HS051', 'HS052', 'HS069', 'HS085', 'HS093', 'HS102'];
+const previewHorses = previewIds.map(id => horses.find(horse => horse.id === id)!);
 ---
 <section id="collection" class="collection-section" aria-labelledby="collection-title">
   <div class="container">
@@ -14,14 +17,23 @@ const { copy: t, locale = 'en' } = Astro.props;
     <div class="cards-toolbar"><span>{t.collection.preview}</span><div class="scroll-controls"><button data-scroll="-1" aria-label={t.collection.previous}><Icon class="rotate-180" /></button><button data-scroll="1" aria-label={t.collection.next}><Icon /></button></div></div>
   </div>
   <div class="cards-track" id="cards" tabindex="0" role="region" aria-label={t.collection.preview}>
-    {featuredHorses.map(horse => <HorseCard horse={horse} copy={t} />)}
+    {previewHorses.map(horse => <HorseCard horse={horse} copy={t} image={homepageCardImages[horse.images.card]} />)}
   </div>
   <div class="container collection-bottom"><span class="swipe-hint">↔ {t.collection.hint}</span><div class="catalog-teaser"><a href={localizedPath('/horses/',locale)}>{t.collection.cta}<Icon /></a><small>{t.collection.soon}</small></div><span class="collection-spark" aria-hidden="true"><Icon name="star" /></span></div>
 </section>
 <script>
   const track = document.querySelector<HTMLElement>('.cards-track');
-  document.querySelectorAll<HTMLButtonElement>('[data-scroll]').forEach(button => {
-    button.addEventListener('click', () => track?.scrollBy({ left: Number(button.dataset.scroll) * (track.querySelector('article')?.getBoundingClientRect().width ?? 320), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }));
+  const scrollCards = (direction: number) => {
+    if (!track) return;
+    const card = track.querySelector<HTMLElement>('article');
+    if (!card) return;
+    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 0;
+    track.scrollBy({ left: direction * (card.getBoundingClientRect().width + gap), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  };
+  document.querySelectorAll<HTMLButtonElement>('[data-scroll]').forEach(button => button.addEventListener('click', () => scrollCards(Number(button.dataset.scroll))));
+  track?.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft') { event.preventDefault(); scrollCards(-1); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); scrollCards(1); }
   });
   document.querySelectorAll<HTMLButtonElement>('[data-card-open]').forEach(button => {
     button.addEventListener('click', () => (document.getElementById(`preview-${button.dataset.cardOpen}`) as HTMLDialogElement)?.showModal());
