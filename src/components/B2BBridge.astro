@@ -1,0 +1,12 @@
+---
+import Icon from './Icon.astro';
+import type { Copy } from '../i18n';
+interface Props { copy: Copy }
+const { copy: t } = Astro.props;
+---
+<section class="b2b-bridge section-compact" aria-labelledby="b2b-bridge-title">
+  <div class="container b2b-bridge-inner">
+    <div><p class="b2b-label">{t.b2b.eyebrow}</p><h2 id="b2b-bridge-title">{t.b2b.title}</h2><p>{t.b2b.text}</p></div>
+    <a class="text-link" href="#where-to-buy">{t.b2b.cta}<Icon /></a>
+  </div>
+</section>

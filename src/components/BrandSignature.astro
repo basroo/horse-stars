@@ -1,0 +1,12 @@
+---
+import { brandSignatureImagePath } from '../data/site';
+import type { Copy } from '../i18n';
+interface Props { copy: Copy }
+const { copy: t } = Astro.props;
+---
+<section class="brand-signature" aria-labelledby="brand-signature-title">
+  <div class="container brand-signature-inner">
+    <img src={brandSignatureImagePath} alt="" width="260" height="260" loading="lazy" />
+    <p id="brand-signature-title">{t.signature.title}</p>
+  </div>
+</section>

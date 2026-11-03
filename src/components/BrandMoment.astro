@@ -5,9 +5,11 @@ import Icon from './Icon.astro';
 import type { Copy } from '../i18n';
 interface Props { copy: Copy }
 const { copy: t } = Astro.props;
+// Replace this single import with /images/hero/horse-stars-card-tabletop.jpg when the supplied campaign image is added.
+const closingImage = landscape;
 ---
 <section class="brand-moment" aria-labelledby="brand-moment-title">
-  <Image src={landscape} alt={t.closing.alt} widths={[640,960,1440,1920]} sizes="100vw" width={1440} loading="lazy" />
+  <Image src={closingImage} alt={t.closing.alt} widths={[640,960,1440,1920]} sizes="100vw" width={1440} loading="lazy" />
   <div class="brand-moment-shade"></div>
-  <div class="container brand-moment-content"><Icon name="star" /><p class="eyebrow">{t.closing.eyebrow}</p><h2 id="brand-moment-title">{t.closing.first}<br />{t.closing.second}<br /><span>{t.closing.third}</span></h2><a class="brand-back" href="#collection">{t.closing.back}<Icon /></a></div>
+  <div class="container brand-moment-content"><Icon name="star" /><h2 id="brand-moment-title">{t.closing.first}<br />{t.closing.second}<br /><span>{t.closing.third}</span></h2><a class="brand-back" href="#collection">{t.closing.back}<Icon /></a></div>
 </section>

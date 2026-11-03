@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import cover from '../../public/images/products/collectors-book-cover.png';
+import Icon from './Icon.astro';
+import type { Copy } from '../i18n';
+interface Props { copy: Copy }
+const { copy: t } = Astro.props;
+const products = [
+  { key: 'packs', href: '/images/products/Card-HS-Pack.pdf' },
+  { key: 'display', href: '/images/products/HS-Display.pdf' },
+  { key: 'book', href: '/images/products/HS-Collectors-Book.pdf' },
+] as const;
+// Pack and display PDFs are verified product assets; their public PDFs remain the source artwork until image exports are supplied.
+---
+<section class="range-section section-large" aria-labelledby="range-title">
+  <div class="container">
+    <div class="editorial-intro range-heading"><h2 id="range-title">{t.range.title}</h2><p>{t.range.intro}</p></div>
+    <div class="range-products">
+      {products.map(product => <a class="range-product" href={product.href} target="_blank" rel="noopener noreferrer">
+        <div class="range-product-art">
+          {product.key === 'book' ? <Image src={cover} alt="" width={240} widths={[240,480]} sizes="(max-width: 639px) 55vw, 240px" loading="lazy" /> : <span class="range-art-placeholder" aria-hidden="true">{t.range.products[product.key].placeholder}</span>}
+        </div>
+        <div class="range-product-copy"><h3>{t.range.products[product.key].title}</h3><p>{t.range.products[product.key].text}</p><span>{t.range.view}<Icon /></span></div>
+      </a>)}
+    </div>
+  </div>
+</section>

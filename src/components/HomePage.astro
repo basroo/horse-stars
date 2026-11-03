@@ -3,12 +3,14 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import Hero from './Hero.astro';
 import Collection from './Collection.astro';
 import HowToPlay from './HowToPlay.astro';
+import B2BBridge from './B2BBridge.astro';
 import SpecialHorses from './SpecialHorses.astro';
 import ChampionTeaser from './ChampionTeaser.astro';
+import BrandSignature from './BrandSignature.astro';
+import ProductRange from './ProductRange.astro';
 import CollectorsBook from './CollectorsBook.astro';
 import News from './News.astro';
 import WhereToBuy from './WhereToBuy.astro';
-import Retailers from './Retailers.astro';
 import BrandMoment from './BrandMoment.astro';
 import { getCopy, type Locale } from '../i18n';
 interface Props { locale?: Locale }
@@ -19,11 +21,13 @@ const copy = getCopy(locale);
   <Hero copy={copy} locale={locale} />
   <Collection copy={copy} locale={locale} />
   <HowToPlay copy={copy} />
+  <B2BBridge copy={copy} />
   <SpecialHorses copy={copy} />
   <ChampionTeaser copy={copy} />
+  <BrandSignature copy={copy} />
+  <ProductRange copy={copy} />
   <CollectorsBook copy={copy} />
-  <News copy={copy} />
   <WhereToBuy copy={copy} />
-  <Retailers copy={copy} />
+  <News copy={copy} />
   <BrandMoment copy={copy} />
 </SiteLayout>

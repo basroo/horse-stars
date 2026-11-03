@@ -85,7 +85,7 @@
         "text": "Porovnejte vlastnost daného kola. Vyšší hodnota vyhrává obě karty. Remíza? Rozhoduje vyšší Celkem."
       },
       {
-        "title": "Spočítej své hvězdy",
+        "title": "Spočítej své karty",
         "text": "Po 5 kolech spočítejte karty. Hráč s nejvíce kartami vyhrává!"
       }
     ],
@@ -99,6 +99,12 @@
     "rulesText": "Vyber kartu dřív, než uvidíš kartu soupeře. Vítěz kola získá odhalené karty. Pokud se shoduje vlastnost i Celkem, domluvte si před hrou vlastní pravidlo.",
     "rounds": "5 kol · 5 různých vlastností"
   },
+  "b2b": {
+    "eyebrow": "Pro prodejce a jezdecké školy",
+    "title": "Přiveď Horse Stars svým zákazníkům.",
+    "text": "Sběratelský koncept koňských karet pro objevování, hraní a nová sběratelská dobrodružství.",
+    "cta": "Možnosti pro prodejce"
+  },
   "special": {
     "eyebrow": "Některé hvězdy září jinak",
     "title": "VÝJIMEČNÍ KONĚ",
@@ -110,7 +116,8 @@
       "elite": "Pozoruhodný kůň. Nezapomenutelný objev.",
       "epic": "Výjimečný duch. Stvořený pro velké souboje.",
       "legend": "Hvězdy kolekce. Opravdu výjimečné."
-    }
+    },
+    "counts": { "elite": "8 koní", "epic": "4 koně", "legend": "2 koně" }
   },
   "champion": {
     "eyebrow": "Již brzy · Samostatná edice",
@@ -121,10 +128,24 @@
     "edition": "Champion Edition",
     "soon": "Podrobnosti o vydání již brzy",
     "alt": "Karta Champion Edition s {finish} designem",
+    "logoAlt": "Champion Edition",
     "finishes": {
       "gold": "zlatým",
       "silver": "stříbrným",
       "bronze": "bronzovým"
+    }
+  },
+  "signature": {
+    "title": "KAŽDÝ KŮŇ MŮŽE BÝT HVĚZDA."
+  },
+  "range": {
+    "title": "KOŇSKÁ KOLEKCE HORSE STARS",
+    "intro": "Sběratelský svět produktů pro obchody, jezdecké školy a milovníky koní.",
+    "view": "Zobrazit produktové materiály",
+    "products": {
+      "packs": { "title": "Balíčky sběratelských karet", "text": "Fyzické karty pro sbírání, výměnu a hru.", "placeholder": "BALÍČEK" },
+      "display": { "title": "Display box", "text": "Produktové materiály pro vystavení kolekce Horse Stars.", "placeholder": "DISPLAY" },
+      "book": { "title": "Sběratelská kniha", "text": "Domov pro kompletní kolekci 102 koní.", "placeholder": "KNIHA" }
     }
   },
   "book": {
@@ -139,8 +160,8 @@
       "Objev plemena a příběhy koní",
       "Odškrtni své karty. Najdi ty, které ti ještě chybí."
     ],
-    "cta": "Objev sběratelskou knihu",
-    "soon": "Podrobnosti o produktu již brzy",
+    "cta": "Stáhnout sběratelskou knihu",
+    "soon": "PDF ke stažení zdarma",
     "alt": "Skutečná obálka sběratelské knihy Horse Stars se třemi koňmi a přehledem kolekce",
     "note": "Tvoje sbírka, hvězda po hvězdě.",
     "artwork": "Sběratelská kniha · Česká obálka"
@@ -164,14 +185,15 @@
   },
   "buy": {
     "eyebrow": "Tvůj další balíček už čeká",
-    "title": "NAJDI",
-    "accent": "HORSE STARS.",
-    "text": "Horse Stars míří do vybraných jezdeckých škol, obchodů a prodejen.",
-    "status": "Připravujeme první prodejní místa",
-    "availability": "Seznam prodejců se připravuje. Vrať se a najdi nejbližší prodejnu Horse Stars.",
-    "cta": "Kde koupit",
+    "title": "PŘIVEĎ HORSE STARS",
+    "accent": "DO SVÉ PRODEJNY.",
+    "text": "Horse Stars je pro novou generaci milovníků koní a sběratelů. Chcete mít Horse Stars ve svém obchodě, jezdecké škole nebo distribuční síti?",
+    "status": "Prodejci, jezdecké školy a distributoři",
+    "availability": "Napište nám o svém podnikání a sdělíme vám další kroky pro informace o prodeji.",
+    "cta": "Vyžádat informace pro prodejce",
     "locations": "Novinky o prodejcích",
     "contact": "Zeptat se na dostupnost",
+    "subject": "Horse Stars — informace pro prodejce",
     "country": "Země",
     "empty": "Prodejní místa oznámíme zde."
   },
@@ -206,13 +228,18 @@
     "news": "Horse Stars News",
     "retailers": "Pro prodejce",
     "youtube": "YouTube",
-    "instagram": "Instagram",
     "soon": "Již brzy",
     "privacy": "Soukromí",
     "terms": "Podmínky",
     "legal": "Právní informace",
     "legalNote": "Právní dokumenty zveřejníme před spuštěním.",
-    "language": "Jazyk"
+    "language": "Jazyk",
+    "company": {
+      "name": "Dutch Impuls s.r.o.",
+      "address": "Havlíčkova 90",
+      "city": "664 01 Říčmanice",
+      "registration": "IČO 277 29 265"
+    }
   },
   "dex": {
     "title": "HORSEDEX",

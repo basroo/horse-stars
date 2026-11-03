@@ -1,24 +1,25 @@
 ---
 import { Image } from 'astro:assets';
-import { battleHorses } from '../data/collection';
+import { horses } from '../data/collection';
 import { homepageCardImages } from '../data/homepage-card-assets';
 import Icon from './Icon.astro';
 import StatIcon from './StatIcon.astro';
+import { cardBackImagePath } from '../data/site';
 import type { Copy } from '../i18n';
 interface Props { copy: Copy }
 const { copy: t } = Astro.props;
 const stats = ['speed', 'power', 'jump', 'brains', 'total'] as const;
-const contenders = battleHorses;
+const contenders = ['HS008', 'HS075'].map(id => horses.find(horse => horse.id === id)!);
 const winner = contenders[0].stats.speed > contenders[1].stats.speed ? contenders[0] : contenders[1];
 ---
-<section id="how-to-play" class="play-section section-space" aria-labelledby="play-title">
+<section id="how-to-play" class="play-section section-compact" aria-labelledby="play-title">
   <div class="container">
-    <div class="section-kicker"><p class="eyebrow"><Icon name="star" />{t.play.eyebrow}</p><span class="section-number">02 / {t.play.rules}</span></div>
-    <div class="play-heading"><h2 id="play-title">{t.play.title}<br /><span>{t.play.accent}</span></h2><p class="section-description">{t.play.intro}</p></div>
+    <p class="play-section-title">HOW TO PLAY</p>
+    <div class="editorial-intro play-heading"><h2 id="play-title">{t.play.title}<br /><span>{t.play.accent}</span></h2><p class="section-description">{t.play.intro}</p></div>
     <div class="play-layout">
       <div class="battle-demo" data-battle data-wins={t.play.wins} data-tie={t.play.tie}>
-        <p class="eyebrow">{t.play.demo}</p>
         <div class="battle-cards">
+          {cardBackImagePath && <img class="battle-card-back" src={cardBackImagePath} alt="" width="220" height="330" loading="lazy" />}
           {contenders.map(horse => <div class:list={['battle-contender', { 'is-winner': horse.id === winner.id }]} data-contender data-name={horse.name} data-stats={JSON.stringify(Object.fromEntries(stats.map(stat => [stat, stat === "total" ? horse.total : horse.stats[stat]])))}>
             {homepageCardImages[horse.images.card] ? <Image src={homepageCardImages[horse.images.card]} alt={`${horse.name} — ${t.rarities[horse.rarity as keyof typeof t.rarities]}`} widths={[200,320,480]} sizes="(max-width: 639px) 35vw, 220px" width={220} loading="lazy" /> : <div class="horse-placeholder" role="img" aria-label={`${horse.name} — Horse Stars card artwork`}><span>HORSE<br />STARS</span><strong>{horse.id}</strong></div>}
             <div class="battle-value"><span>{horse.name}</span><strong data-value>{horse.stats.speed}</strong></div>

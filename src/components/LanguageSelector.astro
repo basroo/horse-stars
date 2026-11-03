@@ -1,0 +1,17 @@
+---
+import type { Copy, Locale } from '../i18n';
+import { alternatePath } from '../i18n/paths';
+
+interface Props { copy: Copy; locale: Locale; pathname: string }
+const { copy: t, locale, pathname } = Astro.props;
+const languages: { code: Locale; label: string; name: string }[] = [
+  { code: 'en', label: 'EN', name: 'English' },
+  { code: 'cs', label: 'CS', name: 'Čeština' },
+];
+---
+<details class="language-menu">
+  <summary aria-label={t.nav.language}><span>{locale.toUpperCase()}</span><span aria-hidden="true">⌄</span></summary>
+  <div class="language-menu-options" role="menu">
+    {languages.map(language => <a href={alternatePath(pathname, language.code)} lang={language.code} role="menuitem" aria-current={locale === language.code ? 'page' : undefined}><strong>{language.label}</strong><span>{language.name}</span></a>)}
+  </div>
+</details>

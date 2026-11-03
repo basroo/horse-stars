@@ -8,21 +8,19 @@ import type { Copy } from '../i18n';
 interface Props { copy: Copy }
 const { copy: t } = Astro.props;
 ---
-<section id="collectors-book" class="book-section section-space" aria-labelledby="book-title">
+<section id="collectors-book" class="book-section section-large" aria-labelledby="book-title">
   <div class="container book-layout">
     <figure class="book-showcase">
       <div class="book-orbit" aria-hidden="true"></div>
       <div class="book-loose-cards" aria-hidden="true">{featuredHorses.slice(1).map(horse => homepageCardImages[horse.images.card] && <Image src={homepageCardImages[horse.images.card]} alt="" width={180} widths={[180,360]} sizes="150px" loading="lazy" />)}</div>
       <div class="book-object"><Image src={cover} alt={t.book.alt} width={400} widths={[300,500,800]} sizes="(max-width: 639px) 64vw, 360px" loading="lazy" /></div>
-      <figcaption><Icon name="star" />{t.book.artwork}</figcaption>
     </figure>
     <div class="book-copy">
-      <p class="eyebrow"><Icon name="star" />{t.book.eyebrow}</p>
       <h2 id="book-title">{t.book.title}<br /><span>{t.book.accent}</span></h2>
       <p class="book-lead">{t.book.lead}<br /><span>{t.book.question}</span></p>
       <p class="section-description">{t.book.text}</p>
       <ul class="book-features">{t.book.features.map(feature => <li><span aria-hidden="true">✓</span>{feature}</li>)}</ul>
-      <div class="upcoming-cta"><span class="button button-purple" aria-disabled="true">{t.book.cta}<Icon /></span><small>{t.book.soon}</small></div>
+      <div class="upcoming-cta"><a class="button button-purple" href="/images/products/HS-Collectors-Book.pdf" download>{t.book.cta}<Icon /></a><small>{t.book.soon}</small></div>
     </div>
   </div>
 </section>

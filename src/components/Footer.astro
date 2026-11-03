@@ -3,7 +3,8 @@ import { Image } from 'astro:assets';
 import logo from '../../public/images/brand/horse-stars-logo.png';
 import { site } from '../data/site';
 import type { Copy, Locale } from '../i18n';
-import { localizedPath, alternatePath } from '../i18n/paths';
+import { localizedPath } from '../i18n/paths';
+import LanguageSelector from './LanguageSelector.astro';
 interface Props { copy: Copy; locale: Locale }
 const { copy: t, locale } = Astro.props;
 const home = localizedPath('/', locale);
@@ -14,16 +15,16 @@ const navigation = [
   { label: t.footer.book, href: `${home}#collectors-book` },
   { label: t.footer.buy, href: `${home}#where-to-buy` },
   { label: t.footer.news, href: `${home}#news` },
-  { label: t.footer.retailers, href: `${home}#retailers` },
+  { label: t.footer.retailers, href: `${home}#where-to-buy` },
 ];
 ---
 <footer class="site-footer expanded-footer">
   <div class="container">
     <div class="footer-main">
-      <div class="footer-brand"><a href={locale === 'en' ? '/' : '/cs/'} aria-label={t.nav.home}><Image src={logo} alt="HORSE STARS" width={170} widths={[170,340]} sizes="170px" loading="lazy" /></a><p>{t.footer.line}</p><a href={site.website}>playhorsestars.com ↗</a></div>
+      <div class="footer-brand"><a href={locale === 'en' ? '/' : '/cs/'} aria-label={t.nav.home}><Image src={logo} alt="HORSE STARS" width={170} widths={[170,340]} sizes="170px" loading="lazy" /></a><p>{t.footer.line}</p><a href={site.website}>playhorsestars.com ↗</a><p class="footer-company">{t.footer.company.name}<br />{t.footer.company.address}<br />{t.footer.company.city}<br />{t.footer.company.registration}</p></div>
       <nav aria-label={t.footer.explore}><h3>{t.footer.explore}</h3><ul>{navigation.map(link => <li><a href={link.href}>{link.label}</a></li>)}</ul></nav>
-      <div class="footer-connect"><h3>{t.footer.connect}</h3><ul>{[{ label: t.footer.youtube, url: site.youtube }, { label: t.footer.instagram, url: site.instagram }].map(social => <li>{social.url ? <a href={social.url} target="_blank" rel="noopener noreferrer">{social.label} ↗</a> : <span>{social.label}<small>{t.footer.soon}</small></span>}</li>)}</ul><h3 class="footer-contact-heading">{t.footer.contact}</h3><a class="footer-email" href={`mailto:${site.email}`}>{site.email}</a></div>
-      <div class="footer-language"><h3>{t.footer.language}</h3><div class="language-switch" aria-label={t.nav.language}><a href={alternatePath(Astro.url.pathname,'en')} lang="en" aria-current={locale === 'en' ? 'page' : undefined}>EN</a><span aria-hidden="true">/</span><a href={alternatePath(Astro.url.pathname,'cs')} lang="cs" aria-current={locale === 'cs' ? 'page' : undefined}>CS</a></div></div>
+      <div class="footer-connect"><h3>{t.footer.connect}</h3><ul>{[{ label: t.footer.youtube, url: site.youtube }].map(social => <li>{social.url ? <a href={social.url} target="_blank" rel="noopener noreferrer">{social.label} ↗</a> : <span>{social.label}<small>{t.footer.soon}</small></span>}</li>)}</ul><h3 class="footer-contact-heading">{t.footer.contact}</h3><a class="footer-email" href={`mailto:${site.email}`}>{site.email}</a></div>
+      <div class="footer-language"><h3>{t.footer.language}</h3><LanguageSelector copy={t} locale={locale} pathname={Astro.url.pathname} /></div>
     </div>
     <div class="footer-base"><small>© {new Date().getFullYear()} {t.footer.rights}</small><details class="footer-legal"><summary>{t.footer.legal}</summary><p>{t.footer.privacy} · {t.footer.terms}<br />{t.footer.legalNote}</p></details><span>{t.footer.edition}</span></div>
   </div>

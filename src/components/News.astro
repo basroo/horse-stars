@@ -9,18 +9,18 @@ const { copy: t } = Astro.props;
 const videoId = featuredVideo.youtubeId && /^[A-Za-z0-9_-]{11}$/.test(featuredVideo.youtubeId) ? featuredVideo.youtubeId : null;
 const posterSource = featuredVideo.poster === '/images/video/horse-stars-news-placeholder.webp' ? poster : featuredVideo.poster;
 ---
-<section id="news" class="news-section section-space" aria-labelledby="news-title">
+<section id="news" class="news-section section-large" aria-labelledby="news-title">
   <div class="container">
-    <div class="news-heading"><div><p class="eyebrow"><Icon name="star" />{t.news.eyebrow}</p><h2 id="news-title">{t.news.title} <span>{t.news.accent}</span></h2></div><p class="section-description">{t.news.text}</p></div>
+    <div class="editorial-intro news-heading"><div><h2 id="news-title">{t.news.title} <span>{t.news.accent}</span></h2></div><p class="section-description">{t.news.text}</p></div>
     <div class="news-player" data-news-player data-video-id={videoId} data-video-title={t.news.titleVideo}>
       {typeof posterSource === 'string'
         ? <Image src={posterSource} alt={t.news.posterAlt} width={1280} height={720} loading="lazy" />
         : <Image src={posterSource} alt={t.news.posterAlt} width={1280} height={720} widths={[480,800,1280]} sizes="(max-width: 639px) 90vw, 88vw" loading="lazy" />}
-      <div class="broadcast-bar"><span class="broadcast-brand"><Icon name="star" /> HORSE STARS <strong>NEWS</strong></span><span>{t.news.preview}</span></div>
-      <div class="news-poster-caption"><span class="eyebrow">{t.news.tag}</span><h3>{t.news.episode}</h3></div>
+      <div class="broadcast-bar"><span class="broadcast-brand"><Icon name="star" /> HORSE STARS <strong>NEWS</strong></span></div>
+      <div class="news-poster-caption"><h3>{t.news.episode}</h3></div>
       <button class="news-play-button" data-video-play disabled={!videoId} aria-label={videoId ? t.news.play : t.news.soon}><span class="play-triangle" aria-hidden="true"></span><span>{videoId ? t.news.play : t.news.soon}</span></button>
     </div>
-    <div class="news-bottom"><p>{videoId ? t.news.privacy : t.news.soon}</p>{site.youtube ? <a class="text-link" href={site.youtube} target="_blank" rel="noopener noreferrer">{t.news.cta}<Icon /></a> : <span class="upcoming-text">{t.news.cta}<small>{t.news.channelSoon}</small></span>}</div>
+    <div class="news-bottom">{site.youtube ? <a class="text-link" href={site.youtube} target="_blank" rel="noopener noreferrer">{t.news.cta}<Icon /></a> : <span class="upcoming-text">{t.news.cta}<small>{t.news.channelSoon}</small></span>}</div>
   </div>
 </section>
 <script>

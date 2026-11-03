@@ -12,14 +12,13 @@ const previewHorses = previewIds.map(id => horses.find(horse => horse.id === id)
 ---
 <section id="collection" class="collection-section" aria-labelledby="collection-title">
   <div class="container">
-    <div class="section-topline"><p class="eyebrow"><Icon name="star" />{t.collection.eyebrow}</p><span class="edition-label">01 / {t.collection.edition}</span></div>
     <div class="collection-heading"><h2 id="collection-title">{t.collection.title}<br /><span>{t.collection.titleAccent}</span><span class="heading-period">.</span></h2><p>{t.collection.description}</p></div>
-    <div class="cards-toolbar"><span>{t.collection.preview}</span><div class="scroll-controls"><button data-scroll="-1" aria-label={t.collection.previous}><Icon class="rotate-180" /></button><button data-scroll="1" aria-label={t.collection.next}><Icon /></button></div></div>
+    <div class="cards-toolbar"><span class="sr-only">{t.collection.preview}</span><div class="scroll-controls"><button data-scroll="-1" aria-label={t.collection.previous}><Icon class="rotate-180" /></button><button data-scroll="1" aria-label={t.collection.next}><Icon /></button></div></div>
   </div>
   <div class="cards-track" id="cards" tabindex="0" role="region" aria-label={t.collection.preview}>
     {previewHorses.map(horse => <HorseCard horse={horse} copy={t} image={homepageCardImages[horse.images.card]} />)}
   </div>
-  <div class="container collection-bottom"><span class="swipe-hint">↔ {t.collection.hint}</span><div class="catalog-teaser"><a href={localizedPath('/horses/',locale)}>{t.collection.cta}<Icon /></a><small>{t.collection.soon}</small></div><span class="collection-spark" aria-hidden="true"><Icon name="star" /></span></div>
+  <div class="container collection-bottom"><span class="swipe-hint">↔ {t.collection.hint}</span><div class="catalog-teaser"><a href={localizedPath('/horses/',locale)}>{t.collection.cta}<Icon /></a></div></div>
 </section>
 <script>
   const track = document.querySelector<HTMLElement>('.cards-track');

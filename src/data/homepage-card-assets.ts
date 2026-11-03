@@ -17,6 +17,8 @@ import ezora from '../../public/images/cards/hs001-ezora.webp';
 import flits from '../../public/images/cards/hs011-flits.webp';
 import ash from '../../public/images/cards/hs052-ash.webp';
 import zeta from '../../public/images/cards/hs069-zeta-69.webp';
+import shazess from '../../public/images/cards/hs008-shazess.webp';
+import aya from '../../public/images/cards/hs075-aya.webp';
 
 export const homepageCardImages: Record<string, ImageMetadata> = {
   '/images/cards/hs001-ezora.webp': ezora,
@@ -31,6 +33,8 @@ export const homepageCardImages: Record<string, ImageMetadata> = {
   '/images/cards/hs056-champ.webp': champ,
   '/images/cards/hs066-el-nero.webp': elNero,
   '/images/cards/hs069-zeta-69.webp': zeta,
+  '/images/cards/hs008-shazess.webp': shazess,
+  '/images/cards/hs075-aya.webp': aya,
   '/images/cards/hs073-mila.webp': mila,
   '/images/cards/hs085-queen.webp': queen,
   '/images/cards/hs093-pantera.webp': pantera,

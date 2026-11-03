@@ -3,7 +3,8 @@ import { Image } from 'astro:assets';
 import logo from '../../public/images/brand/horse-stars-logo.png';
 import Icon from './Icon.astro';
 import type { Copy, Locale } from '../i18n';
-import { localizedPath, alternatePath } from '../i18n/paths';
+import { localizedPath } from '../i18n/paths';
+import LanguageSelector from './LanguageSelector.astro';
 interface Props { copy: Copy; locale: Locale }
 const { copy: t, locale } = Astro.props;
 const home = localizedPath('/', locale);
@@ -18,11 +19,7 @@ const home = localizedPath('/', locale);
       <a href={`${home}#how-to-play`}>{t.hero.secondary}</a>
     </nav>
     <div class="header-actions">
-      <div class="language-switch" aria-label={t.nav.language}>
-        <a href={alternatePath(Astro.url.pathname,'en')} lang="en" aria-current={locale === 'en' ? 'page' : undefined}>EN</a>
-        <span aria-hidden="true">/</span>
-        <a href={alternatePath(Astro.url.pathname,'cs')} lang="cs" aria-current={locale === 'cs' ? 'page' : undefined}>CS</a>
-      </div>
+      <LanguageSelector copy={t} locale={locale} pathname={Astro.url.pathname} />
       <a href={localizedPath('/horses/',locale)} class="header-cta">{t.footer.horsedex}<Icon /></a>
     </div>
   </div>

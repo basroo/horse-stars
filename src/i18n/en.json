@@ -85,7 +85,7 @@
         "text": "Compare the round’s stat. The highest value wins both cards. A tie? The higher Total wins."
       },
       {
-        "title": "Count your stars",
+        "title": "Count your cards",
         "text": "After 5 rounds, count your cards. The player with the most cards wins!"
       }
     ],
@@ -99,6 +99,12 @@
     "rulesText": "Choose your card before seeing your opponent’s. A round winner takes the revealed cards. If both the chosen stat and Total are tied, agree a house rule before you start.",
     "rounds": "5 rounds · 5 different stats"
   },
+  "b2b": {
+    "eyebrow": "For retailers & riding schools",
+    "title": "Bring Horse Stars to your customers.",
+    "text": "A collectible horse trading-card concept built for discovery, play and repeat collecting.",
+    "cta": "Discover retail opportunities"
+  },
   "special": {
     "eyebrow": "Some stars shine differently",
     "title": "THE EXTRAORDINARY",
@@ -110,7 +116,8 @@
       "elite": "A remarkable horse. An unforgettable find.",
       "epic": "Exceptional spirit. Made for great battles.",
       "legend": "The stars of the collection. Truly extraordinary."
-    }
+    },
+    "counts": { "elite": "8 horses", "epic": "4 horses", "legend": "2 horses" }
   },
   "champion": {
     "eyebrow": "Coming next · A separate edition",
@@ -121,10 +128,24 @@
     "edition": "Champion Edition",
     "soon": "Release details coming soon",
     "alt": "Champion Edition card with a {finish} design",
+    "logoAlt": "Champion Edition",
     "finishes": {
       "gold": "gold",
       "silver": "silver",
       "bronze": "bronze"
+    }
+  },
+  "signature": {
+    "title": "EVERY HORSE CAN BE A STAR."
+  },
+  "range": {
+    "title": "THE HORSE STARS RANGE",
+    "intro": "A collectible product world for stores, riding schools and horse lovers.",
+    "view": "View product artwork",
+    "products": {
+      "packs": { "title": "Trading Card Packs", "text": "Physical cards made for collecting, trading and play.", "placeholder": "PACK" },
+      "display": { "title": "Display Box", "text": "Product display artwork for the Horse Stars collection.", "placeholder": "DISPLAY" },
+      "book": { "title": "Collector’s Book", "text": "A home for the complete 102-horse collection.", "placeholder": "BOOK" }
     }
   },
   "book": {
@@ -139,8 +160,8 @@
       "Discover breeds and horse stories",
       "Tick off your cards. Spot the ones you’re missing."
     ],
-    "cta": "Discover the Collector’s Book",
-    "soon": "Product details coming soon",
+    "cta": "Download the Collector’s Book",
+    "soon": "Free PDF download",
     "alt": "The actual Horse Stars Collector’s Book cover, featuring three horses and the collection checklist",
     "note": "Your collection, one star at a time.",
     "artwork": "Collector’s Book · Czech cover artwork"
@@ -164,14 +185,15 @@
   },
   "buy": {
     "eyebrow": "Your next pack is out there",
-    "title": "FIND",
-    "accent": "HORSE STARS.",
-    "text": "Horse Stars is coming to selected riding schools, stores and retailers.",
-    "status": "Getting ready for our first locations",
-    "availability": "Our retailer list is on its way. Check back to find your nearest Horse Stars stockist.",
-    "cta": "Where to buy",
+    "title": "BRING HORSE STARS",
+    "accent": "TO YOUR STORE.",
+    "text": "Horse Stars is designed for a new generation of horse lovers and collectors. Interested in stocking Horse Stars at your store, riding school or distribution network?",
+    "status": "Retailers, riding schools & distributors",
+    "availability": "Tell us about your business and we’ll share the next steps for retail information.",
+    "cta": "Request retail information",
     "locations": "Retailer updates",
     "contact": "Ask about availability",
+    "subject": "Horse Stars — retail information",
     "country": "Country",
     "empty": "Locations will be announced here."
   },
@@ -206,13 +228,18 @@
     "news": "Horse Stars News",
     "retailers": "Retailers",
     "youtube": "YouTube",
-    "instagram": "Instagram",
     "soon": "Coming soon",
     "privacy": "Privacy",
     "terms": "Terms",
     "legal": "Legal information",
     "legalNote": "Legal documents will be published before launch.",
-    "language": "Language"
+    "language": "Language",
+    "company": {
+      "name": "Dutch Impuls s.r.o.",
+      "address": "Havlíčkova 90",
+      "city": "664 01 Říčmanice",
+      "registration": "IČO 277 29 265"
+    }
   },
   "dex": {
     "title": "HORSEDEX",

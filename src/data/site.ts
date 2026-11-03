@@ -3,7 +3,6 @@ export const site = {
   website: 'https://playhorsestars.com',
   // Set verified destinations here; unset links are presented as upcoming.
   youtube: null as string | null,
-  instagram: null as string | null,
 };
 
 export const featuredVideo = {
@@ -24,9 +23,17 @@ export const retailers: Retailer[] = [];
 export const championEdition = {
   id: 'champion',
   total: 20,
+  // Add the official transparent logo at this path when supplied by the client.
+  logo: '/images/specials/champions-edition-logo.png' as string | null,
   cards: [
     { image: '/images/specials/champion-silver.png', finish: 'silver' },
     { image: '/images/specials/champion-gold.png', finish: 'gold' },
     { image: '/images/specials/champion-bronze.png', finish: 'bronze' },
   ],
 };
+
+// Reserved for the authentic card-back artwork supplied by the client.
+export const cardBackImagePath = null as string | null;
+
+// Keep the signature artwork as a single replaceable public asset reference.
+export const brandSignatureImagePath = '/images/brand/horsestar-head.png';
